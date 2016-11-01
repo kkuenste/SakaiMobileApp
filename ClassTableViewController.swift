@@ -9,15 +9,18 @@
 import UIKit
 
 class ClassTableViewController: UITableViewController {
+    
+    var navBar: UINavigationBar = UINavigationBar()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        tableView.alwaysBounceVertical = false
+        tableView.isScrollEnabled = false
+        //self.navBar.frame = CGRect(0, 0, 320, 50)  // Here you can set you Width and Height for your navBar
+        //self.navBar.setBackgroundImage(backgroundImage: UIImage(named: "banner"), for: UIBarMetrics)
+        UINavigationBar.appearance().setBackgroundImage(UIImage(named: "banner"), for: .default)
+        self.navBar.backgroundColor = (UIColor.blue)
+        self.view.addSubview(navBar)
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,18 +34,47 @@ class ClassTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 5
     }
 
-    /*
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        if let classCell = cell as? ClassTableViewCell  {
+            if (indexPath.row == 4) {
+                classCell.classNameLabel.text = "Human Computer Interaction"
+                classCell.classImage.image = UIImage(named: "design")
+                classCell.classNumberLabel.text = "CSE40424"
+            }
+            else if (indexPath.row == 3) {
+                classCell.classNameLabel.text = "General Chemistry Principles"
+                classCell.classImage.image = UIImage(named: "chemistry")
+                classCell.classNumberLabel.text = "CHEM10122"
+            }
+            else if (indexPath.row == 2) {
+                classCell.classNameLabel.text = "Fundamentals of Computing I"
+                classCell.classImage.image = UIImage(named: "computer")
+                classCell.classNumberLabel.text = "CSE20211"
+            }
+            else if (indexPath.row == 1) {
+                classCell.classNameLabel.text = "Calculus II"
+                classCell.classImage.image = UIImage(named: "math")
+                classCell.classNumberLabel.text = "MATH10560"
+            }
+            else if (indexPath.row == 0) {
+                classCell.classNameLabel.text = "Accountancy I"
+                classCell.classImage.image = UIImage(named: "bank")
+                classCell.classNumberLabel.text = "ACCT20100"
+            }
+            
+            
+        }
+        
         return cell
+
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
