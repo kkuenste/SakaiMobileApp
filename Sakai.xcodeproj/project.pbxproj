@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2321E9061DC902C000B6F268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9051DC902C000B6F268 /* AppDelegate.swift */; };
-		2321E9081DC902C000B6F268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9071DC902C000B6F268 /* ViewController.swift */; };
 		2321E90B1DC902C000B6F268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2321E9091DC902C000B6F268 /* Main.storyboard */; };
 		2321E90D1DC902C000B6F268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2321E90C1DC902C000B6F268 /* Assets.xcassets */; };
 		2321E9101DC902C000B6F268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2321E90E1DC902C000B6F268 /* LaunchScreen.storyboard */; };
 		2321E91B1DC902C000B6F268 /* SakaiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E91A1DC902C000B6F268 /* SakaiTests.swift */; };
 		2321E9261DC902C100B6F268 /* SakaiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9251DC902C100B6F268 /* SakaiUITests.swift */; };
+		2321E9341DC908DE00B6F268 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9331DC908DE00B6F268 /* LoginViewController.swift */; };
+		2321E9361DC909A700B6F268 /* ClassTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9351DC909A700B6F268 /* ClassTableViewController.swift */; };
+		2321E9381DC90A2A00B6F268 /* GradeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9371DC90A2A00B6F268 /* GradeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		2321E9021DC902C000B6F268 /* Sakai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sakai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2321E9051DC902C000B6F268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2321E9071DC902C000B6F268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2321E90A1DC902C000B6F268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2321E90C1DC902C000B6F268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2321E90F1DC902C000B6F268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		2321E9211DC902C100B6F268 /* SakaiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SakaiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2321E9251DC902C100B6F268 /* SakaiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SakaiUITests.swift; sourceTree = "<group>"; };
 		2321E9271DC902C100B6F268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2321E9331DC908DE00B6F268 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2321E9351DC909A700B6F268 /* ClassTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassTableViewController.swift; path = ../ClassTableViewController.swift; sourceTree = "<group>"; };
+		2321E9371DC90A2A00B6F268 /* GradeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,11 @@
 		2321E9041DC902C000B6F268 /* Sakai */ = {
 			isa = PBXGroup;
 			children = (
+				2321E9351DC909A700B6F268 /* ClassTableViewController.swift */,
+				2321E9331DC908DE00B6F268 /* LoginViewController.swift */,
 				2321E9051DC902C000B6F268 /* AppDelegate.swift */,
-				2321E9071DC902C000B6F268 /* ViewController.swift */,
 				2321E9091DC902C000B6F268 /* Main.storyboard */,
+				2321E9371DC90A2A00B6F268 /* GradeTableViewController.swift */,
 				2321E90C1DC902C000B6F268 /* Assets.xcassets */,
 				2321E90E1DC902C000B6F268 /* LaunchScreen.storyboard */,
 				2321E9111DC902C000B6F268 /* Info.plist */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2321E9081DC902C000B6F268 /* ViewController.swift in Sources */,
+				2321E9361DC909A700B6F268 /* ClassTableViewController.swift in Sources */,
+				2321E9341DC908DE00B6F268 /* LoginViewController.swift in Sources */,
 				2321E9061DC902C000B6F268 /* AppDelegate.swift in Sources */,
+				2321E9381DC90A2A00B6F268 /* GradeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +522,7 @@
 				2321E92C1DC902C100B6F268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2321E92D1DC902C100B6F268 /* Build configuration list for PBXNativeTarget "SakaiTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				2321E92F1DC902C100B6F268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2321E9301DC902C100B6F268 /* Build configuration list for PBXNativeTarget "SakaiUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +540,7 @@
 				2321E9321DC902C100B6F268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
