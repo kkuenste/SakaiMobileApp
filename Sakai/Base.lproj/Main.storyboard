@@ -18,17 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NetID / email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8X-b9-4Vw">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="pOl-oY-vcS"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBj-fw-3Y9">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="adh-9E-Nk7"/>
+                                    <constraint firstAttribute="width" constant="250" id="ZCP-AH-1Wf"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -45,7 +37,7 @@
                                     <constraint firstAttribute="height" constant="59" id="qVM-Xc-3KK"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA6-Uv-gMu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Sakai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA6-Uv-gMu">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -55,18 +47,26 @@
                                     <constraint firstAttribute="height" constant="31.5" id="kR4-r0-cKs"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDa-kB-v7I">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDa-kB-v7I" userLabel="Login">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="aUl-Ag-vSJ"/>
-                                    <constraint firstAttribute="width" constant="268" id="llA-jH-v8W"/>
+                                    <constraint firstAttribute="width" constant="250" id="Duu-S1-aTq"/>
+                                    <constraint firstAttribute="height" constant="33" id="udv-YC-opz"/>
                                 </constraints>
-                                <state key="normal" title="Login" image="login">
+                                <state key="normal" image="login">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="OVe-t1-IVb" kind="show" id="hDy-SG-vLL"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NetID / email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8X-b9-4Vw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="dWQ-c2-qQX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -76,8 +76,8 @@
                             <constraint firstItem="Xrl-oz-VpZ" firstAttribute="centerX" secondItem="Gkd-mk-VZl" secondAttribute="centerX" id="MbA-XS-VpF"/>
                             <constraint firstItem="R8X-b9-4Vw" firstAttribute="centerY" secondItem="Gkd-mk-VZl" secondAttribute="centerY" id="PwV-At-2gH"/>
                             <constraint firstItem="2p6-9w-ePi" firstAttribute="top" secondItem="tMZ-K4-bkJ" secondAttribute="bottom" constant="20" id="WLJ-sH-kOx"/>
-                            <constraint firstItem="LDa-kB-v7I" firstAttribute="top" secondItem="mBj-fw-3Y9" secondAttribute="bottom" constant="26.5" id="dRC-uA-f2G"/>
-                            <constraint firstItem="mBj-fw-3Y9" firstAttribute="top" secondItem="R8X-b9-4Vw" secondAttribute="bottom" constant="14" id="dWZ-3t-GQo"/>
+                            <constraint firstItem="LDa-kB-v7I" firstAttribute="top" secondItem="mBj-fw-3Y9" secondAttribute="bottom" constant="15" id="dRC-uA-f2G"/>
+                            <constraint firstItem="mBj-fw-3Y9" firstAttribute="top" secondItem="R8X-b9-4Vw" secondAttribute="bottom" constant="15" id="dWZ-3t-GQo"/>
                             <constraint firstItem="mBj-fw-3Y9" firstAttribute="centerX" secondItem="Gkd-mk-VZl" secondAttribute="centerX" id="gL4-nJ-whh"/>
                             <constraint firstItem="LDa-kB-v7I" firstAttribute="centerX" secondItem="Gkd-mk-VZl" secondAttribute="centerX" id="itC-O8-UGA"/>
                             <constraint firstItem="qA6-Uv-gMu" firstAttribute="top" secondItem="bOx-nU-eM5" secondAttribute="bottom" constant="35.5" id="o4P-7Q-pWj"/>
@@ -114,7 +114,7 @@
             </objects>
             <point key="canvasLocation" x="-703" y="-176"/>
         </scene>
-        <!--Item-->
+        <!--Grades-->
         <scene sceneID="hkk-6h-TTd">
             <objects>
                 <tableViewController id="Gyx-iK-zoG" customClass="GradeTableViewController" customModule="Sakai" customModuleProvider="target" sceneMemberID="viewController">
@@ -137,28 +137,45 @@
                             <outlet property="delegate" destination="Gyx-iK-zoG" id="TvT-wW-Wdd"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="ggC-si-jCI"/>
+                    <tabBarItem key="tabBarItem" title="Grades" image="grade" selectedImage="grade" id="ggC-si-jCI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PmV-6C-itt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="246" y="87"/>
         </scene>
-        <!--Item-->
+        <!--Courses-->
         <scene sceneID="KgF-Aa-XSW">
             <objects>
                 <tableViewController id="2NZ-ZM-zd4" customClass="ClassTableViewController" customModule="Sakai" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iBY-g4-ocI">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" id="iBY-g4-ocI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JDa-7D-WMG">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="JDa-7D-WMG" customClass="ClassTableViewCell" customModule="Sakai" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JDa-7D-WMG" id="wf3-Ia-dn2">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="84"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IEm-hq-9PR">
+                                            <frame key="frameInset" minX="8" minY="5" width="75" height="75"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-BX-0YO">
+                                            <frame key="frameInset" minX="91" minY="8" width="105" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="classImage" destination="IEm-hq-9PR" id="xda-zM-rDP"/>
+                                    <outlet property="classNameLabel" destination="lqq-BX-0YO" id="nFZ-Mb-s8L"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -166,15 +183,35 @@
                             <outlet property="delegate" destination="2NZ-ZM-zd4" id="gEY-Bw-1Kg"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="shr-kF-TSh"/>
+                    <tabBarItem key="tabBarItem" title="Courses" image="class" id="shr-kF-TSh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSk-MP-XLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="-630"/>
+            <point key="canvasLocation" x="242.40000000000001" y="-630.13493253373315"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SN8-hz-1nQ">
+            <objects>
+                <viewController id="drs-lg-D4B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zK4-rg-6EB"/>
+                        <viewControllerLayoutGuide type="bottom" id="3bY-1U-FwE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wdm-sa-reY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oai-Uq-VuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="-630"/>
         </scene>
     </scenes>
     <resources>
         <image name="banner" width="1117" height="94"/>
+        <image name="class" width="25" height="25"/>
+        <image name="grade" width="25" height="25"/>
         <image name="login" width="503" height="71"/>
     </resources>
 </document>
