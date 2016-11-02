@@ -67,6 +67,9 @@ class ClassTableViewController: UITableViewController {
                 classCell.classImage.image = UIImage(named: "bank")
                 classCell.classNumberLabel.text = "ACCT20100"
             }
+            else {
+                classCell.backgroundColor = UIColor.lightGray
+            }
             
             
         }

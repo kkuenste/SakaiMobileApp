@@ -19,17 +19,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aK-R0-JpJ">
+                                <color key="backgroundColor" red="0.035294117647058823" green="0.12549019607843137" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Hep-aO-9kd"/>
+                                    <constraint firstAttribute="height" constant="52" id="owe-7k-cLb"/>
+                                </constraints>
+                            </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBj-fw-3Y9">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="ZCP-AH-1Wf"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-K4-bkJ">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.16078431372549018" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.035294117647058823" green="0.12549019607843137" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Sakai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA6-Uv-gMu">
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.035294117647058823" green="0.12549019607843137" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="bOx-nU-eM5">
@@ -63,11 +75,6 @@
                                     <constraint firstAttribute="height" constant="175" id="kvv-7V-dpg"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Sakai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA6-Uv-gMu">
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.16078431372549018" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.86493869446202476" green="0.89031793643766577" blue="0.9173819287330317" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -80,7 +87,9 @@
                             <constraint firstItem="2p6-9w-ePi" firstAttribute="top" secondItem="tMZ-K4-bkJ" secondAttribute="bottom" constant="20" id="WLJ-sH-kOx"/>
                             <constraint firstItem="LDa-kB-v7I" firstAttribute="top" secondItem="mBj-fw-3Y9" secondAttribute="bottom" constant="15" id="dRC-uA-f2G"/>
                             <constraint firstItem="mBj-fw-3Y9" firstAttribute="top" secondItem="R8X-b9-4Vw" secondAttribute="bottom" constant="15" id="dWZ-3t-GQo"/>
+                            <constraint firstItem="7aK-R0-JpJ" firstAttribute="top" secondItem="k9u-F1-aem" secondAttribute="bottom" constant="-20" id="fO1-vG-GQ4"/>
                             <constraint firstItem="mBj-fw-3Y9" firstAttribute="centerX" secondItem="Gkd-mk-VZl" secondAttribute="centerX" id="gL4-nJ-whh"/>
+                            <constraint firstItem="7aK-R0-JpJ" firstAttribute="leading" secondItem="Gkd-mk-VZl" secondAttribute="leadingMargin" constant="-16" id="hdO-jQ-EjP"/>
                             <constraint firstItem="LDa-kB-v7I" firstAttribute="centerX" secondItem="Gkd-mk-VZl" secondAttribute="centerX" id="itC-O8-UGA"/>
                             <constraint firstItem="bOx-nU-eM5" firstAttribute="centerX" secondItem="Gkd-mk-VZl" secondAttribute="centerX" id="qGK-ws-NNu"/>
                             <constraint firstItem="R8X-b9-4Vw" firstAttribute="top" secondItem="qA6-Uv-gMu" secondAttribute="bottom" constant="20" id="qPy-Qm-YcU"/>
@@ -144,7 +153,7 @@
             </objects>
             <point key="canvasLocation" x="246" y="87"/>
         </scene>
-        <!--Sakai-->
+        <!--Class Table View Controller-->
         <scene sceneID="KgF-Aa-XSW">
             <objects>
                 <tableViewController id="2NZ-ZM-zd4" customClass="ClassTableViewController" customModule="Sakai" customModuleProvider="target" sceneMemberID="viewController">
@@ -200,7 +209,7 @@
                             <outlet property="delegate" destination="2NZ-ZM-zd4" id="gEY-Bw-1Kg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Sakai" id="Ed6-fw-x88"/>
+                    <navigationItem key="navigationItem" id="Ed6-fw-x88"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSk-MP-XLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
