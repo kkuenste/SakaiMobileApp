@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aK-R0-JpJ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aK-R0-JpJ" userLabel="navyView">
                                 <color key="backgroundColor" red="0.035294117647058823" green="0.12549019607843137" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="Hep-aO-9kd"/>
@@ -32,16 +32,17 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-K4-bkJ">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.035294117647058823" green="0.12549019607843137" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Sakai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA6-Uv-gMu">
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.035294117647058823" green="0.12549019607843137" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA6-Uv-gMu">
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome to Sakai">
+                                        <attributes>
+                                            <color key="NSColor" red="0.035294117647058823" green="0.12549019607843137" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="bOx-nU-eM5">
@@ -67,7 +68,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dome" translatesAutoresizingMaskIntoConstraints="NO" id="Xrl-oz-VpZ">
                                 <constraints>
@@ -75,6 +76,25 @@
                                     <constraint firstAttribute="height" constant="175" id="kvv-7V-dpg"/>
                                 </constraints>
                             </imageView>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Xt-OH-YKN">
+                                <frame key="frameInset" minX="120" minY="594" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.035294117647058823" green="0.12549019607843137" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Forgot Password?">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPasswordButton:" destination="Rlk-py-AeB" eventType="touchUpInside" id="8UO-WW-nOc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.86493869446202476" green="0.89031793643766577" blue="0.9173819287330317" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -84,7 +104,6 @@
                             <constraint firstItem="bOx-nU-eM5" firstAttribute="width" secondItem="Gkd-mk-VZl" secondAttribute="width" id="Fdc-Sj-0rP"/>
                             <constraint firstItem="Xrl-oz-VpZ" firstAttribute="centerX" secondItem="Gkd-mk-VZl" secondAttribute="centerX" id="MbA-XS-VpF"/>
                             <constraint firstItem="R8X-b9-4Vw" firstAttribute="centerY" secondItem="Gkd-mk-VZl" secondAttribute="centerY" constant="40.5" id="PwV-At-2gH"/>
-                            <constraint firstItem="2p6-9w-ePi" firstAttribute="top" secondItem="tMZ-K4-bkJ" secondAttribute="bottom" constant="20" id="WLJ-sH-kOx"/>
                             <constraint firstItem="LDa-kB-v7I" firstAttribute="top" secondItem="mBj-fw-3Y9" secondAttribute="bottom" constant="15" id="dRC-uA-f2G"/>
                             <constraint firstItem="mBj-fw-3Y9" firstAttribute="top" secondItem="R8X-b9-4Vw" secondAttribute="bottom" constant="15" id="dWZ-3t-GQo"/>
                             <constraint firstItem="7aK-R0-JpJ" firstAttribute="top" secondItem="k9u-F1-aem" secondAttribute="bottom" constant="-20" id="fO1-vG-GQ4"/>
@@ -94,10 +113,10 @@
                             <constraint firstItem="bOx-nU-eM5" firstAttribute="centerX" secondItem="Gkd-mk-VZl" secondAttribute="centerX" id="qGK-ws-NNu"/>
                             <constraint firstItem="R8X-b9-4Vw" firstAttribute="top" secondItem="qA6-Uv-gMu" secondAttribute="bottom" constant="20" id="qPy-Qm-YcU"/>
                             <constraint firstItem="R8X-b9-4Vw" firstAttribute="centerX" secondItem="Gkd-mk-VZl" secondAttribute="centerX" id="vne-SA-RbH"/>
-                            <constraint firstItem="tMZ-K4-bkJ" firstAttribute="centerX" secondItem="Gkd-mk-VZl" secondAttribute="centerX" id="z9d-Ty-ZSu"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="forgotPasswordLabel" destination="7Xt-OH-YKN" id="l30-7k-iEw"/>
                         <outlet property="netIDTextField" destination="R8X-b9-4Vw" id="piC-Df-DrR"/>
                         <outlet property="passwordTextField" destination="mBj-fw-3Y9" id="Y3m-Ki-eRU"/>
                     </connections>
@@ -209,16 +228,20 @@
                             <outlet property="delegate" destination="2NZ-ZM-zd4" id="gEY-Bw-1Kg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Ed6-fw-x88"/>
+                    <navigationItem key="navigationItem" id="Ed6-fw-x88">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="wOp-Sl-W7I">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSk-MP-XLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1181.5999999999999" y="-630.13493253373315"/>
         </scene>
-        <!--View Controller-->
+        <!--Class Detail View Controller-->
         <scene sceneID="SN8-hz-1nQ">
             <objects>
-                <viewController id="drs-lg-D4B" sceneMemberID="viewController">
+                <viewController id="drs-lg-D4B" customClass="ClassDetailViewController" customModule="Sakai" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zK4-rg-6EB"/>
                         <viewControllerLayoutGuide type="bottom" id="3bY-1U-FwE"/>
@@ -226,8 +249,18 @@
                     <view key="view" contentMode="scaleToFill" id="wdm-sa-reY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rna-I3-GJs" customClass="syllabusDetailView" customModule="Sakai" customModuleProvider="target">
+                                <frame key="frameInset" minX="16" minY="169" width="162" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117647058823" green="0.12549019607843137" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="syllabusDetailView" destination="Rna-I3-GJs" id="7QY-Gp-A8T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oai-Uq-VuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

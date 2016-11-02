@@ -10,18 +10,26 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var forgotPasswordLabel: UIButton!
+    
+    @IBAction func forgotPasswordButton(_ sender: AnyObject) {
+        let alert = UIAlertController(title: "Email Sent", message: "Email has been sent with a link to reset your password.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+
+    }
+    
     @IBOutlet weak var netIDTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //forgotPasswordLabel.titleLabel?.textColor = UIColor(colorLiteralRed: 9, green: 32, blue: 64, alpha: 1)
+        forgotPasswordLabel.titleLabel?.textColor = #colorLiteral(red: 0.02541817166, green: 0.1732199192, blue: 0.3195238113, alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

@@ -16,11 +16,7 @@ class ClassTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.alwaysBounceVertical = false
         tableView.isScrollEnabled = false
-        //self.navBar.frame = CGRect(0, 0, 320, 50)  // Here you can set you Width and Height for your navBar
-        //self.navBar.setBackgroundImage(backgroundImage: UIImage(named: "banner"), for: UIBarMetrics)
-        UINavigationBar.appearance().setBackgroundImage(UIImage(named: "banner"), for: .default)
-        self.navBar.backgroundColor = (UIColor.blue)
-        self.view.addSubview(navBar)
+        tableView.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,9 +62,6 @@ class ClassTableViewController: UITableViewController {
                 classCell.classNameLabel.text = "Accountancy I"
                 classCell.classImage.image = UIImage(named: "bank")
                 classCell.classNumberLabel.text = "ACCT20100"
-            }
-            else {
-                classCell.backgroundColor = UIColor.lightGray
             }
             
             

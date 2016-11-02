@@ -17,6 +17,8 @@
 		2321E9361DC909A700B6F268 /* ClassTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9351DC909A700B6F268 /* ClassTableViewController.swift */; };
 		2321E9381DC90A2A00B6F268 /* GradeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9371DC90A2A00B6F268 /* GradeTableViewController.swift */; };
 		2321E93A1DC916B800B6F268 /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9391DC916B800B6F268 /* ClassTableViewCell.swift */; };
+		23E3046F1DCA8B8400EAE274 /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3046E1DCA8B8400EAE274 /* ClassDetailViewController.swift */; };
+		23E304711DCA8C4400EAE274 /* syllabusDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E304701DCA8C4400EAE274 /* syllabusDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		2321E9351DC909A700B6F268 /* ClassTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassTableViewController.swift; path = ../ClassTableViewController.swift; sourceTree = "<group>"; };
 		2321E9371DC90A2A00B6F268 /* GradeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTableViewController.swift; sourceTree = "<group>"; };
 		2321E9391DC916B800B6F268 /* ClassTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		23E3046E1DCA8B8400EAE274 /* ClassDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
+		23E304701DCA8C4400EAE274 /* syllabusDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = syllabusDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +107,17 @@
 		2321E9041DC902C000B6F268 /* Sakai */ = {
 			isa = PBXGroup;
 			children = (
-				2321E9351DC909A700B6F268 /* ClassTableViewController.swift */,
-				2321E9391DC916B800B6F268 /* ClassTableViewCell.swift */,
-				2321E9331DC908DE00B6F268 /* LoginViewController.swift */,
 				2321E9051DC902C000B6F268 /* AppDelegate.swift */,
 				2321E9091DC902C000B6F268 /* Main.storyboard */,
+				23E304701DCA8C4400EAE274 /* syllabusDetailView.swift */,
+				23E3046E1DCA8B8400EAE274 /* ClassDetailViewController.swift */,
+				2321E9331DC908DE00B6F268 /* LoginViewController.swift */,
+				2321E9351DC909A700B6F268 /* ClassTableViewController.swift */,
+				2321E9391DC916B800B6F268 /* ClassTableViewCell.swift */,
 				2321E9371DC90A2A00B6F268 /* GradeTableViewController.swift */,
-				2321E90C1DC902C000B6F268 /* Assets.xcassets */,
 				2321E90E1DC902C000B6F268 /* LaunchScreen.storyboard */,
 				2321E9111DC902C000B6F268 /* Info.plist */,
+				2321E90C1DC902C000B6F268 /* Assets.xcassets */,
 			);
 			path = Sakai;
 			sourceTree = "<group>";
@@ -275,6 +281,8 @@
 				2321E9341DC908DE00B6F268 /* LoginViewController.swift in Sources */,
 				2321E9061DC902C000B6F268 /* AppDelegate.swift in Sources */,
 				2321E93A1DC916B800B6F268 /* ClassTableViewCell.swift in Sources */,
+				23E3046F1DCA8B8400EAE274 /* ClassDetailViewController.swift in Sources */,
+				23E304711DCA8C4400EAE274 /* syllabusDetailView.swift in Sources */,
 				2321E9381DC90A2A00B6F268 /* GradeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
