@@ -11,17 +11,28 @@ import UIKit
 class ClassDetailViewController: UIViewController {
 
     @IBOutlet weak var syllabusDetailView: UIView!
+    @IBOutlet weak var gradesDetailView: UIView!
+    @IBOutlet weak var calendarDetailView: UIView!
+    @IBOutlet weak var assignmentsDetailView: UIView!
+    @IBOutlet weak var resourcesDetailView: UIView!
+    @IBOutlet weak var announcementsDetailView: UIView!
+
+    @IBAction func logoutButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         syllabusDetailView.layer.cornerRadius = 10
-        syllabusDetailView.setNeedsDisplay()
-        syllabusDetailView.setNeedsLayout()
-
+        gradesDetailView.layer.cornerRadius = 10
+        calendarDetailView.layer.cornerRadius = 10
+        assignmentsDetailView.layer.cornerRadius = 10
+        resourcesDetailView.layer.cornerRadius = 10
+        announcementsDetailView.layer.cornerRadius = 10
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

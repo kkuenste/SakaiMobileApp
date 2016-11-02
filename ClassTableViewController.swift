@@ -10,6 +10,9 @@ import UIKit
 
 class ClassTableViewController: UITableViewController {
     
+    @IBAction func Logout(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
     var navBar: UINavigationBar = UINavigationBar()
 
     override func viewDidLoad() {
