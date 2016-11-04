@@ -10,6 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginButtonView: UIView!
     @IBOutlet weak var forgotPasswordLabel: UIButton!
     
     @IBAction func forgotPasswordButton(_ sender: AnyObject) {
@@ -24,8 +25,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //forgotPasswordLabel.titleLabel?.textColor = UIColor(colorLiteralRed: 9, green: 32, blue: 64, alpha: 1)
         forgotPasswordLabel.titleLabel?.textColor = #colorLiteral(red: 0.02541817166, green: 0.1732199192, blue: 0.3195238113, alpha: 1)
+        loginButtonView.layer.cornerRadius = 5
     }
 
     override func didReceiveMemoryWarning() {
