@@ -10,6 +10,9 @@ import UIKit
 
 class GradeTableViewController: UITableViewController {
 
+    @IBAction func logoutButton(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

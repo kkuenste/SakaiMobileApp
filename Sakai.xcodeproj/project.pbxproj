@@ -17,6 +17,8 @@
 		2321E9361DC909A700B6F268 /* ClassTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9351DC909A700B6F268 /* ClassTableViewController.swift */; };
 		2321E9381DC90A2A00B6F268 /* GradeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9371DC90A2A00B6F268 /* GradeTableViewController.swift */; };
 		2321E93A1DC916B800B6F268 /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321E9391DC916B800B6F268 /* ClassTableViewCell.swift */; };
+		2331C5111DCC079C00478A80 /* AnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2331C5101DCC079C00478A80 /* AnnouncementViewController.swift */; };
+		2331C5131DCC12A400478A80 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2331C5121DCC12A400478A80 /* TabBarController.swift */; };
 		23A0173A1DCC05EB009535C1 /* SyllabusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A017391DCC05EB009535C1 /* SyllabusViewController.swift */; };
 		23E3046F1DCA8B8400EAE274 /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3046E1DCA8B8400EAE274 /* ClassDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		2321E9351DC909A700B6F268 /* ClassTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassTableViewController.swift; path = ../ClassTableViewController.swift; sourceTree = "<group>"; };
 		2321E9371DC90A2A00B6F268 /* GradeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTableViewController.swift; sourceTree = "<group>"; };
 		2321E9391DC916B800B6F268 /* ClassTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		2331C5101DCC079C00478A80 /* AnnouncementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementViewController.swift; sourceTree = "<group>"; };
+		2331C5121DCC12A400478A80 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		23A017391DCC05EB009535C1 /* SyllabusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyllabusViewController.swift; sourceTree = "<group>"; };
 		23E3046E1DCA8B8400EAE274 /* ClassDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +113,8 @@
 			children = (
 				2321E9051DC902C000B6F268 /* AppDelegate.swift */,
 				2321E9091DC902C000B6F268 /* Main.storyboard */,
+				2331C5121DCC12A400478A80 /* TabBarController.swift */,
+				2331C5101DCC079C00478A80 /* AnnouncementViewController.swift */,
 				23A017391DCC05EB009535C1 /* SyllabusViewController.swift */,
 				23E3046E1DCA8B8400EAE274 /* ClassDetailViewController.swift */,
 				2321E9331DC908DE00B6F268 /* LoginViewController.swift */,
@@ -279,6 +285,8 @@
 			files = (
 				2321E9361DC909A700B6F268 /* ClassTableViewController.swift in Sources */,
 				23A0173A1DCC05EB009535C1 /* SyllabusViewController.swift in Sources */,
+				2331C5111DCC079C00478A80 /* AnnouncementViewController.swift in Sources */,
+				2331C5131DCC12A400478A80 /* TabBarController.swift in Sources */,
 				2321E9341DC908DE00B6F268 /* LoginViewController.swift in Sources */,
 				2321E9061DC902C000B6F268 /* AppDelegate.swift in Sources */,
 				2321E93A1DC916B800B6F268 /* ClassTableViewCell.swift in Sources */,

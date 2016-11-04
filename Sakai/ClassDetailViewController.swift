@@ -16,6 +16,12 @@ class ClassDetailViewController: UIViewController {
     @IBOutlet weak var assignmentsDetailView: UIView!
     @IBOutlet weak var resourcesDetailView: UIView!
     @IBOutlet weak var announcementsDetailView: UIView!
+    
+    var courseName = ""
+    var courseNumber = ""
+    var courseImage = ""
+    @IBOutlet weak var courseNameLabel: UILabel!
+    @IBOutlet weak var courseNumberLabel: UILabel!
 
     @IBAction func logoutButton(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
@@ -29,6 +35,8 @@ class ClassDetailViewController: UIViewController {
         assignmentsDetailView.layer.cornerRadius = 10
         resourcesDetailView.layer.cornerRadius = 10
         announcementsDetailView.layer.cornerRadius = 10
+        courseNameLabel.text = courseName
+        courseNumberLabel.text = courseNumber
     }
 
     override func didReceiveMemoryWarning() {

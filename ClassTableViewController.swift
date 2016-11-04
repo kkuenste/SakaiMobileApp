@@ -14,6 +14,10 @@ class ClassTableViewController: UITableViewController {
         dismiss(animated: true, completion: nil)
     }
     var navBar: UINavigationBar = UINavigationBar()
+    
+    let courseNames = ["Accountancy I", "Calculus II", "Fundamentals of Computing I", "General Chemistry Principles", "Human Computer Interaction"]
+    let courseNumbers = ["ACCT20100", "MATH10560", "CSE20211", "CHEM10122", "CSE40424"]
+    let courseImages = ["bank", "math", "computer", "chemistry", "design"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,33 +45,9 @@ class ClassTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         if let classCell = cell as? ClassTableViewCell  {
-            if (indexPath.row == 4) {
-                classCell.classNameLabel.text = "Human Computer Interaction"
-                classCell.classImage.image = UIImage(named: "design")
-                classCell.classNumberLabel.text = "CSE40424"
-            }
-            else if (indexPath.row == 3) {
-                classCell.classNameLabel.text = "General Chemistry Principles"
-                classCell.classImage.image = UIImage(named: "chemistry")
-                classCell.classNumberLabel.text = "CHEM10122"
-            }
-            else if (indexPath.row == 2) {
-                classCell.classNameLabel.text = "Fundamentals of Computing I"
-                classCell.classImage.image = UIImage(named: "computer")
-                classCell.classNumberLabel.text = "CSE20211"
-            }
-            else if (indexPath.row == 1) {
-                classCell.classNameLabel.text = "Calculus II"
-                classCell.classImage.image = UIImage(named: "math")
-                classCell.classNumberLabel.text = "MATH10560"
-            }
-            else if (indexPath.row == 0) {
-                classCell.classNameLabel.text = "Accountancy I"
-                classCell.classImage.image = UIImage(named: "bank")
-                classCell.classNumberLabel.text = "ACCT20100"
-            }
-            
-            
+            classCell.classNameLabel.text = courseNames[indexPath.row]
+            classCell.classNumberLabel.text = courseNumbers[indexPath.row]
+            classCell.classImage.image = UIImage(named: courseImages[indexPath.row])
         }
         
         return cell
@@ -110,14 +90,17 @@ class ClassTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let dest = segue.destination as? ClassDetailViewController, let indexPath = tableView.indexPathForSelectedRow {
+                dest.courseName = courseNames[indexPath.row]
+                dest.courseNumber = courseNumbers[indexPath.row]
+                dest.courseImage = courseImages[indexPath.row]
+            }
     }
-    */
+
 
 }
