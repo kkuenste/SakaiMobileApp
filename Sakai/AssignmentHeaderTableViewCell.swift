@@ -1,5 +1,5 @@
 //
-//  AssignmentTableViewCell.swift
+//  AssignmentHeaderTableViewCell.swift
 //  Sakai
 //
 //  Created by Katie Kuenster on 11/6/16.
@@ -8,14 +8,7 @@
 
 import UIKit
 
-class AssignmentTableViewCell: UITableViewCell {
-
-    @IBAction func viewButton(_ sender: AnyObject) {
-    }
-    @IBOutlet weak var bottomBar: UIView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var pdfLabel: UILabel!
+class AssignmentHeaderTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

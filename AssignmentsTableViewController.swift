@@ -10,8 +10,18 @@ import UIKit
 
 class AssignmentsTableViewController: UITableViewController {
 
+    @IBAction func doneButton(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    let assignments = ["Assignment", "Assignment 5", "Assignment 4", "Assignment 3", "Assignment 2", "Assignment 1"]
+    let dates = ["Due", "11/1", "10/25", "10/23", "10/20", "10/15"]
+    let images = ["PDF","Assignment1", "Assignment1", "Assignment1", "Assignment1", "Assignment1"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,23 +39,37 @@ class AssignmentsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return assignments.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "assignCell", for: indexPath)
+
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
+        
+            if let aCell = cell as? AssignmentTableViewCell  {
+                aCell.nameLabel.text = assignments[indexPath.row ]
+                aCell.dateLabel.text = dates[indexPath.row]
+                aCell.bottomBar.backgroundColor = #colorLiteral(red: 0.03206641227, green: 0.1726923287, blue: 0.3107052743, alpha: 1)
+                if (indexPath.row == 0) {
+                    aCell.nameLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+                    aCell.dateLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+                    aCell.pdfLabel.text = ""
+                    
+                } else {
+                }
+            }
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
