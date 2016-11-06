@@ -367,7 +367,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PmV-6C-itt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1253.5999999999999" y="117.39130434782609"/>
+            <point key="canvasLocation" x="242" y="897"/>
         </scene>
         <!--Class Table View Controller-->
         <scene sceneID="KgF-Aa-XSW">
@@ -598,11 +598,18 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dn-Ah-3wC">
+                                        <frame key="frameInset" width="162" height="97"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="53f-kp-emM" kind="presentation" id="XMQ-LJ-KhG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.8666666666666667" green="0.89411764705882357" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4R-9M-NJj" customClass="syllabusDetailView" customModule="Sakai" customModuleProvider="target">
-                                <frame key="frameInset" minX="16" minY="397" width="162" height="97"/>
+                                <frame key="frameInset" minX="16" minY="399" width="162" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pdf" translatesAutoresizingMaskIntoConstraints="NO" id="zfQ-aN-wlZ">
@@ -626,7 +633,7 @@
                                 <color key="backgroundColor" red="0.8666666666666667" green="0.89411764705882357" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D9Q-3Z-aJD" customClass="syllabusDetailView" customModule="Sakai" customModuleProvider="target">
-                                <frame key="frameInset" minX="197" minY="397" width="162" height="97"/>
+                                <frame key="frameInset" minX="197" minY="399" width="162" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="annoucements" translatesAutoresizingMaskIntoConstraints="NO" id="Gyj-Hj-7zx">
@@ -681,6 +688,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oai-Uq-VuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1952.8" y="-630.13493253373315"/>
+        </scene>
+        <!--Assignments Table View Controller-->
+        <scene sceneID="1wY-Jj-NFJ">
+            <objects>
+                <tableViewController id="Jbn-8U-ozT" customClass="AssignmentsTableViewController" customModule="Sakai" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" id="wMZ-Ga-CS5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="assignCell" rowHeight="85" id="whQ-n7-ShN" customClass="AssignmentTableViewCell" customModule="Sakai" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="whQ-n7-ShN" id="aFH-yK-FfH">
+                                    <frame key="frameInset" width="375" height="84"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Assignment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gg-M9-bWM">
+                                            <frame key="frameInset" minX="8" minY="8" width="91" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Jbn-8U-ozT" id="hy5-KS-eoY"/>
+                            <outlet property="delegate" destination="Jbn-8U-ozT" id="Xbe-yQ-qGv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="CSC-bs-iDF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gxf-kg-9pz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2892" y="410.64467766116945"/>
         </scene>
         <!--Syllabus View Controller-->
         <scene sceneID="bpM-Pd-k0R">
@@ -907,7 +952,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvR-d0-jyc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4695.1999999999998" y="-233.43328335832086"/>
+            <point key="canvasLocation" x="6573.6000000000004" y="-233.43328335832086"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J16-fu-aWb">
@@ -925,7 +970,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4M-ct-GKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3756" y="-233.43328335832086"/>
+            <point key="canvasLocation" x="5634.3999999999996" y="-233.43328335832086"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iJu-8H-JW6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="53f-kp-emM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cik-AT-mx4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jbn-8U-ozT" kind="relationship" relationship="rootViewController" id="pLR-Ak-4v4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVf-hP-zF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952.8" y="410.64467766116945"/>
         </scene>
     </scenes>
     <resources>
