@@ -10,7 +10,7 @@ import UIKit
 
 class AnnouncementTableViewController: UITableViewController {
     
-    let subject = ["Class Canceled", "Office Hours Changed", "Exam 1 Scheduled", "Assignment 5 Posted", "Assignment 3 Graded"]
+    let subject = ["Class Canceled", "Office Hours Changed", "Exam 2 Scheduled", "Assignment 5 Posted", "Assignment 3 Graded"]
     let body = ["Class is canceled this Wednesday, I will be away at a conference.", "Office hours for next Friday have been canceled. Additional office hours arre being offer on Thursday at 4pm.", "The date for Exam 2 has been set for Wednesday November 9th. It will cover up through chapter 5.", "Assignment 5 has been posted. It is due next Tuesday.", "The grades for Assignment 3 have been posted. The average score was 50/60."]
     let date = ["Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM"]
 
@@ -19,12 +19,8 @@ class AnnouncementTableViewController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableView.allowsSelection = false
     }
 
     override func didReceiveMemoryWarning() {

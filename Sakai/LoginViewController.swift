@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var loginButtonView: UIView!
     @IBOutlet weak var forgotPasswordLabel: UIButton!
@@ -27,21 +27,27 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         forgotPasswordLabel.titleLabel?.textColor = #colorLiteral(red: 0.02541817166, green: 0.1732199192, blue: 0.3195238113, alpha: 1)
         loginButtonView.layer.cornerRadius = 5
+        passwordTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        netIDTextField.text = ""
+        passwordTextField.text = ""
     }
-    */
+
 
 }

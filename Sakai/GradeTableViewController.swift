@@ -17,6 +17,7 @@ class GradeTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.alwaysBounceVertical = false
         tableView.isScrollEnabled = false
+        tableView.allowsSelection = false
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
