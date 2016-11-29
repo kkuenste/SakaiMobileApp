@@ -1,0 +1,6 @@
+framework module Pods_SakaiUITests {
+  umbrella header "Pods-SakaiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

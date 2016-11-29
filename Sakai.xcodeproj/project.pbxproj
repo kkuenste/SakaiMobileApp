@@ -27,6 +27,9 @@
 		23A92CF61DCFC1040018968C /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A92CF51DCFC1040018968C /* AnnouncementTableViewCell.swift */; };
 		23B8A4A81DCFE63A001F4DEA /* AssignmentPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B8A4A71DCFE63A001F4DEA /* AssignmentPDFViewController.swift */; };
 		23E3046F1DCA8B8400EAE274 /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3046E1DCA8B8400EAE274 /* ClassDetailViewController.swift */; };
+		288E062A17A6132AF1E145B3 /* Pods_SakaiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A41FF36A297C9901B4A1255 /* Pods_SakaiUITests.framework */; };
+		9B78675CC50410C6581E2BE6 /* Pods_Sakai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DFD5D375256F369F4ED70F /* Pods_Sakai.framework */; };
+		B64901B00A6A2784B89CE6BA /* Pods_SakaiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8263AD5750D4118EA4427C9 /* Pods_SakaiTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,15 @@
 		23A92CF51DCFC1040018968C /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 		23B8A4A71DCFE63A001F4DEA /* AssignmentPDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentPDFViewController.swift; sourceTree = "<group>"; };
 		23E3046E1DCA8B8400EAE274 /* ClassDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
+		4714B66BDFC982914A5B5241 /* Pods-Sakai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sakai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sakai/Pods-Sakai.debug.xcconfig"; sourceTree = "<group>"; };
+		6A41FF36A297C9901B4A1255 /* Pods_SakaiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SakaiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82AA4B3C051CE50908FDF2F4 /* Pods-Sakai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sakai.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sakai/Pods-Sakai.release.xcconfig"; sourceTree = "<group>"; };
+		8763AFB44248ADE350606565 /* Pods-SakaiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakaiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SakaiUITests/Pods-SakaiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		91DFD5D375256F369F4ED70F /* Pods_Sakai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sakai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A53C9C40DE75A1004F78DB0D /* Pods-SakaiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakaiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SakaiUITests/Pods-SakaiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D8263AD5750D4118EA4427C9 /* Pods_SakaiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SakaiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0BA07F9ACC9CEBCAB81DDA7 /* Pods-SakaiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakaiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SakaiTests/Pods-SakaiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAE4963729720C14BFAF1974 /* Pods-SakaiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SakaiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SakaiTests/Pods-SakaiTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B78675CC50410C6581E2BE6 /* Pods_Sakai.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64901B00A6A2784B89CE6BA /* Pods_SakaiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288E062A17A6132AF1E145B3 /* Pods_SakaiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +122,8 @@
 				2321E9191DC902C000B6F268 /* SakaiTests */,
 				2321E9241DC902C100B6F268 /* SakaiUITests */,
 				2321E9031DC902C000B6F268 /* Products */,
+				F01A8D2F382F303C7780B8E2 /* Pods */,
+				E809B790B8564AA018CF2C91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +213,29 @@
 			name = Grades;
 			sourceTree = "<group>";
 		};
+		E809B790B8564AA018CF2C91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91DFD5D375256F369F4ED70F /* Pods_Sakai.framework */,
+				D8263AD5750D4118EA4427C9 /* Pods_SakaiTests.framework */,
+				6A41FF36A297C9901B4A1255 /* Pods_SakaiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F01A8D2F382F303C7780B8E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4714B66BDFC982914A5B5241 /* Pods-Sakai.debug.xcconfig */,
+				82AA4B3C051CE50908FDF2F4 /* Pods-Sakai.release.xcconfig */,
+				E0BA07F9ACC9CEBCAB81DDA7 /* Pods-SakaiTests.debug.xcconfig */,
+				FAE4963729720C14BFAF1974 /* Pods-SakaiTests.release.xcconfig */,
+				8763AFB44248ADE350606565 /* Pods-SakaiUITests.debug.xcconfig */,
+				A53C9C40DE75A1004F78DB0D /* Pods-SakaiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2321E92A1DC902C100B6F268 /* Build configuration list for PBXNativeTarget "Sakai" */;
 			buildPhases = (
+				5895F0B20FCD9A223230BF22 /* [CP] Check Pods Manifest.lock */,
 				2321E8FE1DC902C000B6F268 /* Sources */,
 				2321E8FF1DC902C000B6F268 /* Frameworks */,
 				2321E9001DC902C000B6F268 /* Resources */,
+				02D697878B084ED30E2F4358 /* [CP] Embed Pods Frameworks */,
+				37EDDAEB56FBFB991BB73C3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2321E92D1DC902C100B6F268 /* Build configuration list for PBXNativeTarget "SakaiTests" */;
 			buildPhases = (
+				FC55CE352AE060D22F918005 /* [CP] Check Pods Manifest.lock */,
 				2321E9121DC902C000B6F268 /* Sources */,
 				2321E9131DC902C000B6F268 /* Frameworks */,
 				2321E9141DC902C000B6F268 /* Resources */,
+				4C98089A27056DAA3B05ADB5 /* [CP] Embed Pods Frameworks */,
+				2EE8ED8CA465C65F8CD2D378 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2321E9301DC902C100B6F268 /* Build configuration list for PBXNativeTarget "SakaiUITests" */;
 			buildPhases = (
+				952814A75EC5B27ADBC0A772 /* [CP] Check Pods Manifest.lock */,
 				2321E91D1DC902C000B6F268 /* Sources */,
 				2321E91E1DC902C000B6F268 /* Frameworks */,
 				2321E91F1DC902C000B6F268 /* Resources */,
+				F85274039818B497C18481B4 /* [CP] Embed Pods Frameworks */,
+				BB527B787FBB18BAD319220F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -327,6 +376,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02D697878B084ED30E2F4358 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sakai/Pods-Sakai-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EE8ED8CA465C65F8CD2D378 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SakaiTests/Pods-SakaiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37EDDAEB56FBFB991BB73C3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sakai/Pods-Sakai-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C98089A27056DAA3B05ADB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SakaiTests/Pods-SakaiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5895F0B20FCD9A223230BF22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		952814A75EC5B27ADBC0A772 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB527B787FBB18BAD319220F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SakaiUITests/Pods-SakaiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F85274039818B497C18481B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SakaiUITests/Pods-SakaiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC55CE352AE060D22F918005 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2321E8FE1DC902C000B6F268 /* Sources */ = {
@@ -497,6 +684,7 @@
 		};
 		2321E92B1DC902C100B6F268 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4714B66BDFC982914A5B5241 /* Pods-Sakai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N4Z3R2L69T;
@@ -510,6 +698,7 @@
 		};
 		2321E92C1DC902C100B6F268 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82AA4B3C051CE50908FDF2F4 /* Pods-Sakai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N4Z3R2L69T;
@@ -523,6 +712,7 @@
 		};
 		2321E92E1DC902C100B6F268 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0BA07F9ACC9CEBCAB81DDA7 /* Pods-SakaiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -538,6 +728,7 @@
 		};
 		2321E92F1DC902C100B6F268 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE4963729720C14BFAF1974 /* Pods-SakaiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -553,6 +744,7 @@
 		};
 		2321E9311DC902C100B6F268 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8763AFB44248ADE350606565 /* Pods-SakaiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = N4Z3R2L69T;
@@ -567,6 +759,7 @@
 		};
 		2321E9321DC902C100B6F268 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53C9C40DE75A1004F78DB0D /* Pods-SakaiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = N4Z3R2L69T;

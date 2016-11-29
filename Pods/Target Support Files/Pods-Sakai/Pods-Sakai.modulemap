@@ -1,0 +1,6 @@
+framework module Pods_Sakai {
+  umbrella header "Pods-Sakai-umbrella.h"
+
+  export *
+  module * { export * }
+}
