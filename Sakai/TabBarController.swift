@@ -12,7 +12,8 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.tabBar.backgroundImage = UIImage(named: "tab")
+        self.tabBar.tintColor = UIColor.white
     }
 
     override func didReceiveMemoryWarning() {
