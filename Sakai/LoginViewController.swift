@@ -28,6 +28,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         forgotPasswordLabel.titleLabel?.textColor = #colorLiteral(red: 0.02541817166, green: 0.1732199192, blue: 0.3195238113, alpha: 1)
         loginButtonView.layer.cornerRadius = 5
         passwordTextField.delegate = self
+        netIDTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
