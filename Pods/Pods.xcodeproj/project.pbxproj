@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		208653BF1ADE0B9100E75CF93451A6A1 /* Pods-SakaiTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4489D9F7FB33F0FE99134FC2250723 /* Pods-SakaiTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E0FA52F306A1A820A37E3AB228F18D4 /* AccordionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA59A290A91977E61EED0693DB678D /* AccordionMenu.swift */; };
+		59ABA5C8524D3975C6EA3D4943B0D5FA /* Pods-SakaiUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EA202AFBC4AD0D4E29CC52801C83FED /* Pods-SakaiUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59B9A98879F055132A835DAC4FAE7BE0 /* Pods-SakaiUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A08697006D6CCB2B0B4692272DF43B /* Pods-SakaiUITests-dummy.m */; };
+		5BC1F8348FE132BBC99EA0F162D238C9 /* AccordionMenuSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AECCCF15808CCF0BA48356DFC4B24C /* AccordionMenuSwift-dummy.m */; };
+		9692341D3B7540B41FFA2C25A6975267 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FCC473D007BB55C92B55633CE24DDB /* Parent.swift */; };
+		A51FC5D5471E03A49965C1FD43167514 /* Pods-Sakai-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C75F6F4DAB2B1528B51030C32B5064 /* Pods-Sakai-dummy.m */; };
+		B294D6D3BD412362E826164EEC978C12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B83519042FB51262359AEC41FDD0DA27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D2C8A07EE4C89ED2CD73D00EC5F76349 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D5618161268E5D328A33A1D5D918DD9E /* AccordionMenuSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB486974409803B3093904D82BE36B52 /* AccordionMenuSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D95AAD9085BD91E720D89E306CA7192D /* Pods-SakaiTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAE63355E5298D706395C6CA144925E /* Pods-SakaiTests-dummy.m */; };
+		DAD9EAA71F2CC9D17FF13A7292AB660B /* Pods-Sakai-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 704BFACDE05F02443B2143245417F233 /* Pods-Sakai-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDB349E5024C62E7440B168A8DDBFC0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF5239D643E1D5E34C78AA4728CAB216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60BB8720935026DC9363C02D4BD220EE;
+			remoteInfo = AccordionMenuSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09D27972B647CD60585219D367FB8445 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E80EA8E6B17B24D4C4F33F3B0D4D4A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F3450FBE8062B6596342A8DE8B011B9 /* Pods_Sakai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Sakai.framework; path = "Pods-Sakai.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1278D17668D9D06B4341D328EDA57C4C /* Pods-SakaiTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SakaiTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1EA202AFBC4AD0D4E29CC52801C83FED /* Pods-SakaiUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SakaiUITests-umbrella.h"; sourceTree = "<group>"; };
+		21C75F6F4DAB2B1528B51030C32B5064 /* Pods-Sakai-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sakai-dummy.m"; sourceTree = "<group>"; };
+		26039D8C4F5C4BEF9C9AD7309A893B3C /* Pods-Sakai-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sakai-resources.sh"; sourceTree = "<group>"; };
+		281624DFDD4514B8FDECE6F1D950A1A4 /* Pods-Sakai-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sakai-acknowledgements.plist"; sourceTree = "<group>"; };
+		290F8E299AE3FA3B2E1A419540AB4B46 /* Pods-SakaiUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SakaiUITests-frameworks.sh"; sourceTree = "<group>"; };
+		29D021ECCB92D17648CFB6A00502640E /* Pods_SakaiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SakaiUITests.framework; path = "Pods-SakaiUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A20DA0399FC442942F32C938ADA2668 /* Pods-SakaiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SakaiTests.release.xcconfig"; sourceTree = "<group>"; };
+		2CFBE89D2F9C7FE981C9774F05D71C76 /* AccordionMenuSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AccordionMenuSwift.framework; path = AccordionMenuSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CAE63355E5298D706395C6CA144925E /* Pods-SakaiTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SakaiTests-dummy.m"; sourceTree = "<group>"; };
+		4129F7CE1908B234195693C0D579E7A8 /* Pods-SakaiTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SakaiTests-resources.sh"; sourceTree = "<group>"; };
+		41AECCCF15808CCF0BA48356DFC4B24C /* AccordionMenuSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AccordionMenuSwift-dummy.m"; sourceTree = "<group>"; };
+		44325EBEE57D6273B0B9AFCEB7E8FCBA /* Pods-SakaiUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SakaiUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4AC97499388C935C35210175C16B4426 /* Pods-SakaiTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SakaiTests.modulemap"; sourceTree = "<group>"; };
+		5B02590EDDE02C1D1A0BA17559F8CC4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		704BFACDE05F02443B2143245417F233 /* Pods-Sakai-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sakai-umbrella.h"; sourceTree = "<group>"; };
+		724EB2ED7C8A2B7BB1FBED2F9DE91413 /* Pods-SakaiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SakaiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		75FCC473D007BB55C92B55633CE24DDB /* Parent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parent.swift; path = AccordionMenuSwift/Classes/Parent.swift; sourceTree = "<group>"; };
+		77A08697006D6CCB2B0B4692272DF43B /* Pods-SakaiUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SakaiUITests-dummy.m"; sourceTree = "<group>"; };
+		78DA59A290A91977E61EED0693DB678D /* AccordionMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccordionMenu.swift; path = AccordionMenuSwift/Classes/AccordionMenu.swift; sourceTree = "<group>"; };
+		7C8FF54B85212A12639176F8D4E2BB45 /* AccordionMenuSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AccordionMenuSwift.modulemap; sourceTree = "<group>"; };
+		841B8A88F83731183F92F1A95E655B8C /* Pods-Sakai.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Sakai.modulemap"; sourceTree = "<group>"; };
+		89DFD4266399B72FFF7E3A56CB57D0AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECCEC0B6C39217411A5E9F71A96FB32 /* Pods-Sakai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sakai.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9931D5305DACA7D7449F018F350F2C56 /* Pods-Sakai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sakai.debug.xcconfig"; sourceTree = "<group>"; };
+		9E4D7777101B4E7E064073484CC75755 /* Pods-Sakai-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sakai-frameworks.sh"; sourceTree = "<group>"; };
+		A1B1CA40B64394AAA85CF8DBB2E5CA1D /* Pods-SakaiUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SakaiUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB486974409803B3093904D82BE36B52 /* AccordionMenuSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AccordionMenuSwift-umbrella.h"; sourceTree = "<group>"; };
+		AC09A48E8BD37C198662EDCC9C51063E /* Pods-SakaiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SakaiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B09490142A1BE9757DFDAFEBE6626739 /* Pods-SakaiUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SakaiUITests.modulemap"; sourceTree = "<group>"; };
+		B6825AE7F890161E5FB02AD7A1E9065E /* Pods-Sakai-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sakai-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6CED1C9F4003CC811112ABA9DFECDF8 /* Pods-SakaiTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SakaiTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA78DE4FE2BA316E0B61866CB4C2DF95 /* AccordionMenuSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AccordionMenuSwift-prefix.pch"; sourceTree = "<group>"; };
+		BE4CFC23E7932E09B5294AD7531BFAD2 /* Pods-SakaiTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SakaiTests-frameworks.sh"; sourceTree = "<group>"; };
+		BF4489D9F7FB33F0FE99134FC2250723 /* Pods-SakaiTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SakaiTests-umbrella.h"; sourceTree = "<group>"; };
+		C191F63326A6D085CA6376D6B0385E5B /* Pods-SakaiUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SakaiUITests-resources.sh"; sourceTree = "<group>"; };
+		C205D46C47DBE107A0E900A45A75C06E /* AccordionMenuSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AccordionMenuSwift.xcconfig; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD3A0C27392F56F710000CE4C438E8F8 /* Pods_SakaiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SakaiTests.framework; path = "Pods-SakaiTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B3FC6E813F9AF6057C5AF3D3D38F6F /* Pods-SakaiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SakaiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B8D8B201013C1AF932E87167E6B9029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B83519042FB51262359AEC41FDD0DA27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57BAB3C2D0241D4B25F12BCFF05F7B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C8A07EE4C89ED2CD73D00EC5F76349 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF9072B45CA447C6D2A923A627522E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB349E5024C62E7440B168A8DDBFC0A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E302AC5CDC12556B9D74209C801D5BF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B294D6D3BD412362E826164EEC978C12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F45B93AC8ABCD4F5C40486C4B58FF22 /* Pods-SakaiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B02590EDDE02C1D1A0BA17559F8CC4A /* Info.plist */,
+				B09490142A1BE9757DFDAFEBE6626739 /* Pods-SakaiUITests.modulemap */,
+				A1B1CA40B64394AAA85CF8DBB2E5CA1D /* Pods-SakaiUITests-acknowledgements.markdown */,
+				44325EBEE57D6273B0B9AFCEB7E8FCBA /* Pods-SakaiUITests-acknowledgements.plist */,
+				77A08697006D6CCB2B0B4692272DF43B /* Pods-SakaiUITests-dummy.m */,
+				290F8E299AE3FA3B2E1A419540AB4B46 /* Pods-SakaiUITests-frameworks.sh */,
+				C191F63326A6D085CA6376D6B0385E5B /* Pods-SakaiUITests-resources.sh */,
+				1EA202AFBC4AD0D4E29CC52801C83FED /* Pods-SakaiUITests-umbrella.h */,
+				F1B3FC6E813F9AF6057C5AF3D3D38F6F /* Pods-SakaiUITests.debug.xcconfig */,
+				724EB2ED7C8A2B7BB1FBED2F9DE91413 /* Pods-SakaiUITests.release.xcconfig */,
+			);
+			name = "Pods-SakaiUITests";
+			path = "Target Support Files/Pods-SakaiUITests";
+			sourceTree = "<group>";
+		};
+		182A2065336C913C3E2D1EE0009E7BC2 /* Pods-Sakai */ = {
+			isa = PBXGroup;
+			children = (
+				89DFD4266399B72FFF7E3A56CB57D0AD /* Info.plist */,
+				841B8A88F83731183F92F1A95E655B8C /* Pods-Sakai.modulemap */,
+				B6825AE7F890161E5FB02AD7A1E9065E /* Pods-Sakai-acknowledgements.markdown */,
+				281624DFDD4514B8FDECE6F1D950A1A4 /* Pods-Sakai-acknowledgements.plist */,
+				21C75F6F4DAB2B1528B51030C32B5064 /* Pods-Sakai-dummy.m */,
+				9E4D7777101B4E7E064073484CC75755 /* Pods-Sakai-frameworks.sh */,
+				26039D8C4F5C4BEF9C9AD7309A893B3C /* Pods-Sakai-resources.sh */,
+				704BFACDE05F02443B2143245417F233 /* Pods-Sakai-umbrella.h */,
+				9931D5305DACA7D7449F018F350F2C56 /* Pods-Sakai.debug.xcconfig */,
+				8ECCEC0B6C39217411A5E9F71A96FB32 /* Pods-Sakai.release.xcconfig */,
+			);
+			name = "Pods-Sakai";
+			path = "Target Support Files/Pods-Sakai";
+			sourceTree = "<group>";
+		};
+		4B25279156EC9E163D14D8FD34B87022 /* AccordionMenuSwift */ = {
+			isa = PBXGroup;
+			children = (
+				78DA59A290A91977E61EED0693DB678D /* AccordionMenu.swift */,
+				75FCC473D007BB55C92B55633CE24DDB /* Parent.swift */,
+				FE1BE7326DD9A1D37667EDD804C34290 /* Support Files */,
+			);
+			name = AccordionMenuSwift;
+			path = AccordionMenuSwift;
+			sourceTree = "<group>";
+		};
+		73A247F30923A20A47314D6F7506F333 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CFBE89D2F9C7FE981C9774F05D71C76 /* AccordionMenuSwift.framework */,
+				0F3450FBE8062B6596342A8DE8B011B9 /* Pods_Sakai.framework */,
+				CD3A0C27392F56F710000CE4C438E8F8 /* Pods_SakaiTests.framework */,
+				29D021ECCB92D17648CFB6A00502640E /* Pods_SakaiUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FF435471ECE47999E26FDE964391F0E7 /* Pods */,
+				73A247F30923A20A47314D6F7506F333 /* Products */,
+				D234714C75D1E568D722106CE2E2A87F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCEE3CAFDE83219EFB0BDBFB0DA836D4 /* Pods-SakaiTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E80EA8E6B17B24D4C4F33F3B0D4D4A9 /* Info.plist */,
+				4AC97499388C935C35210175C16B4426 /* Pods-SakaiTests.modulemap */,
+				1278D17668D9D06B4341D328EDA57C4C /* Pods-SakaiTests-acknowledgements.markdown */,
+				B6CED1C9F4003CC811112ABA9DFECDF8 /* Pods-SakaiTests-acknowledgements.plist */,
+				3CAE63355E5298D706395C6CA144925E /* Pods-SakaiTests-dummy.m */,
+				BE4CFC23E7932E09B5294AD7531BFAD2 /* Pods-SakaiTests-frameworks.sh */,
+				4129F7CE1908B234195693C0D579E7A8 /* Pods-SakaiTests-resources.sh */,
+				BF4489D9F7FB33F0FE99134FC2250723 /* Pods-SakaiTests-umbrella.h */,
+				AC09A48E8BD37C198662EDCC9C51063E /* Pods-SakaiTests.debug.xcconfig */,
+				2A20DA0399FC442942F32C938ADA2668 /* Pods-SakaiTests.release.xcconfig */,
+			);
+			name = "Pods-SakaiTests";
+			path = "Target Support Files/Pods-SakaiTests";
+			sourceTree = "<group>";
+		};
+		D234714C75D1E568D722106CE2E2A87F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				182A2065336C913C3E2D1EE0009E7BC2 /* Pods-Sakai */,
+				CCEE3CAFDE83219EFB0BDBFB0DA836D4 /* Pods-SakaiTests */,
+				0F45B93AC8ABCD4F5C40486C4B58FF22 /* Pods-SakaiUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FE1BE7326DD9A1D37667EDD804C34290 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C8FF54B85212A12639176F8D4E2BB45 /* AccordionMenuSwift.modulemap */,
+				C205D46C47DBE107A0E900A45A75C06E /* AccordionMenuSwift.xcconfig */,
+				41AECCCF15808CCF0BA48356DFC4B24C /* AccordionMenuSwift-dummy.m */,
+				BA78DE4FE2BA316E0B61866CB4C2DF95 /* AccordionMenuSwift-prefix.pch */,
+				AB486974409803B3093904D82BE36B52 /* AccordionMenuSwift-umbrella.h */,
+				09D27972B647CD60585219D367FB8445 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AccordionMenuSwift";
+			sourceTree = "<group>";
+		};
+		FF435471ECE47999E26FDE964391F0E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B25279156EC9E163D14D8FD34B87022 /* AccordionMenuSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C703D163777DFF245BD7D709BDE9B25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD9EAA71F2CC9D17FF13A7292AB660B /* Pods-Sakai-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66EA96B03056D72613417D056E7A92A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59ABA5C8524D3975C6EA3D4943B0D5FA /* Pods-SakaiUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		877AE8B2A0B08B0CF0FCEB93217598A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				208653BF1ADE0B9100E75CF93451A6A1 /* Pods-SakaiTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D7280D78EE39019F754E18AC4EBA6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5618161268E5D328A33A1D5D918DD9E /* AccordionMenuSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		222E1019C0BB0E704103C5563E1C84FA /* Pods-SakaiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF9C38794AECA08E0D3F20CF6466059D /* Build configuration list for PBXNativeTarget "Pods-SakaiTests" */;
+			buildPhases = (
+				9F546828DEE2775B44EE37E9300DAECD /* Sources */,
+				7B8D8B201013C1AF932E87167E6B9029 /* Frameworks */,
+				877AE8B2A0B08B0CF0FCEB93217598A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SakaiTests";
+			productName = "Pods-SakaiTests";
+			productReference = CD3A0C27392F56F710000CE4C438E8F8 /* Pods_SakaiTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		383D171973D137D2AC70635FFEDADC1F /* Pods-Sakai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44A0373672EBB27B06BCE88D25D908A8 /* Build configuration list for PBXNativeTarget "Pods-Sakai" */;
+			buildPhases = (
+				63FAA880DAF1B3BBE5EB6D0962211090 /* Sources */,
+				CCF9072B45CA447C6D2A923A627522E8 /* Frameworks */,
+				2C703D163777DFF245BD7D709BDE9B25 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				788913BA67A1DBF18B2068836C50F64A /* PBXTargetDependency */,
+			);
+			name = "Pods-Sakai";
+			productName = "Pods-Sakai";
+			productReference = 0F3450FBE8062B6596342A8DE8B011B9 /* Pods_Sakai.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D46687173ACC9A3083E47DB8F2AF095 /* Pods-SakaiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627723545DD1CD52B90EB8DC56AAC196 /* Build configuration list for PBXNativeTarget "Pods-SakaiUITests" */;
+			buildPhases = (
+				539B25AA6ECFB81CD140AD5BBAF73F79 /* Sources */,
+				A57BAB3C2D0241D4B25F12BCFF05F7B2 /* Frameworks */,
+				66EA96B03056D72613417D056E7A92A2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SakaiUITests";
+			productName = "Pods-SakaiUITests";
+			productReference = 29D021ECCB92D17648CFB6A00502640E /* Pods_SakaiUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60BB8720935026DC9363C02D4BD220EE /* AccordionMenuSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4B5EA44C79B5C9B4D03532F3794A3D4 /* Build configuration list for PBXNativeTarget "AccordionMenuSwift" */;
+			buildPhases = (
+				69C250B8EC0D5C7B2E963C337BBFBA13 /* Sources */,
+				E302AC5CDC12556B9D74209C801D5BF6 /* Frameworks */,
+				C5D7280D78EE39019F754E18AC4EBA6D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AccordionMenuSwift;
+			productName = AccordionMenuSwift;
+			productReference = 2CFBE89D2F9C7FE981C9774F05D71C76 /* AccordionMenuSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 73A247F30923A20A47314D6F7506F333 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60BB8720935026DC9363C02D4BD220EE /* AccordionMenuSwift */,
+				383D171973D137D2AC70635FFEDADC1F /* Pods-Sakai */,
+				222E1019C0BB0E704103C5563E1C84FA /* Pods-SakaiTests */,
+				4D46687173ACC9A3083E47DB8F2AF095 /* Pods-SakaiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		539B25AA6ECFB81CD140AD5BBAF73F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59B9A98879F055132A835DAC4FAE7BE0 /* Pods-SakaiUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63FAA880DAF1B3BBE5EB6D0962211090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51FC5D5471E03A49965C1FD43167514 /* Pods-Sakai-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69C250B8EC0D5C7B2E963C337BBFBA13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0FA52F306A1A820A37E3AB228F18D4 /* AccordionMenu.swift in Sources */,
+				5BC1F8348FE132BBC99EA0F162D238C9 /* AccordionMenuSwift-dummy.m in Sources */,
+				9692341D3B7540B41FFA2C25A6975267 /* Parent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F546828DEE2775B44EE37E9300DAECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95AAD9085BD91E720D89E306CA7192D /* Pods-SakaiTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		788913BA67A1DBF18B2068836C50F64A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AccordionMenuSwift;
+			target = 60BB8720935026DC9363C02D4BD220EE /* AccordionMenuSwift */;
+			targetProxy = CF5239D643E1D5E34C78AA4728CAB216 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CE0DD713EEB9D2420B358A90B7A3529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ECCEC0B6C39217411A5E9F71A96FB32 /* Pods-Sakai.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Sakai/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sakai/Pods-Sakai.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Sakai;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		78AA3AA3BE9A457338BAED14E0E0C5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 724EB2ED7C8A2B7BB1FBED2F9DE91413 /* Pods-SakaiUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SakaiUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SakaiUITests/Pods-SakaiUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SakaiUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B7B2E925842F77D8AA12E1A9F44CE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1B3FC6E813F9AF6057C5AF3D3D38F6F /* Pods-SakaiUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SakaiUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SakaiUITests/Pods-SakaiUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SakaiUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		941CA564EF971AE67270C74155725BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A20DA0399FC442942F32C938ADA2668 /* Pods-SakaiTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SakaiTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SakaiTests/Pods-SakaiTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SakaiTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		969A257093E0D6FF9BEA85AE95CA8FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C205D46C47DBE107A0E900A45A75C06E /* AccordionMenuSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AccordionMenuSwift/AccordionMenuSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AccordionMenuSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AccordionMenuSwift/AccordionMenuSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AccordionMenuSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B1809596D0D3FDCA390766560610FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9931D5305DACA7D7449F018F350F2C56 /* Pods-Sakai.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Sakai/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sakai/Pods-Sakai.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Sakai;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B70D63D58CFF29F3DD1F321188AC4DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C205D46C47DBE107A0E900A45A75C06E /* AccordionMenuSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AccordionMenuSwift/AccordionMenuSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AccordionMenuSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AccordionMenuSwift/AccordionMenuSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AccordionMenuSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7259114E38DD42B4A36432AD4B6F451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC09A48E8BD37C198662EDCC9C51063E /* Pods-SakaiTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SakaiTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SakaiTests/Pods-SakaiTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SakaiTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44A0373672EBB27B06BCE88D25D908A8 /* Build configuration list for PBXNativeTarget "Pods-Sakai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B1809596D0D3FDCA390766560610FDE /* Debug */,
+				1CE0DD713EEB9D2420B358A90B7A3529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		627723545DD1CD52B90EB8DC56AAC196 /* Build configuration list for PBXNativeTarget "Pods-SakaiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B7B2E925842F77D8AA12E1A9F44CE07 /* Debug */,
+				78AA3AA3BE9A457338BAED14E0E0C5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4B5EA44C79B5C9B4D03532F3794A3D4 /* Build configuration list for PBXNativeTarget "AccordionMenuSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				969A257093E0D6FF9BEA85AE95CA8FEB /* Debug */,
+				B70D63D58CFF29F3DD1F321188AC4DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF9C38794AECA08E0D3F20CF6466059D /* Build configuration list for PBXNativeTarget "Pods-SakaiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7259114E38DD42B4A36432AD4B6F451 /* Debug */,
+				941CA564EF971AE67270C74155725BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
