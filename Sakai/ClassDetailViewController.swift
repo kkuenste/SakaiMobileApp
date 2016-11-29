@@ -12,10 +12,11 @@ class ClassDetailViewController: UIViewController {
 
     @IBOutlet weak var syllabusDetailView: UIView!
     @IBOutlet weak var gradesDetailView: UIView!
-    @IBOutlet weak var calendarDetailView: UIView!
+    //@IBOutlet weak var calendarDetailView: UIView!
     @IBOutlet weak var assignmentsDetailView: UIView!
     @IBOutlet weak var resourcesDetailView: UIView!
     @IBOutlet weak var announcementsDetailView: UIView!
+    @IBOutlet weak var officeHoursDetailView: UIView!
     
     var courseName = ""
     var courseNumber = ""
@@ -31,7 +32,8 @@ class ClassDetailViewController: UIViewController {
         super.viewDidLoad()
         syllabusDetailView.layer.cornerRadius = 10
         gradesDetailView.layer.cornerRadius = 10
-        calendarDetailView.layer.cornerRadius = 10
+        //calendarDetailView.layer.cornerRadius = 10
+        officeHoursDetailView.layer.cornerRadius = 10
         assignmentsDetailView.layer.cornerRadius = 10
         resourcesDetailView.layer.cornerRadius = 10
         announcementsDetailView.layer.cornerRadius = 10
