@@ -26,6 +26,9 @@ open class AccordionTableViewController: UITableViewController {
         }
     }
     
+    var previous = 5
+    var current = Int()
+    
     /// Define wether can exist several cells expanded or not.
     open var numberOfCellsExpanded: NumberOfCellExpanded = .one
     
@@ -101,7 +104,10 @@ open class AccordionTableViewController: UITableViewController {
         self.tableView.deleteRows(at: indexPaths, with: UITableViewRowAnimation.fade)
         
         // update the total of rows
-        self.total -= numberOfChilds
+        
+        if !(current == previous){
+            self.total -= numberOfChilds
+        }
         self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
     
@@ -269,7 +275,8 @@ extension AccordionTableViewController {
         
         let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
         
-        
+        previous = current
+        current = indexPath.row
         
         guard isParentCell else {
             NSLog("A child was tapped!!!")
