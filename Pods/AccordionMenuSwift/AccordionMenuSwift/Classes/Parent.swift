@@ -42,9 +42,12 @@ public struct Parent {
     /// The title for the cell.
     var title: String
     
-    public init(state: State, childs: [String], title: String) {
+    var score: [String]
+    
+    public init(state: State, childs: [String], score: [String], title: String) {
         self.state = state
         self.childs = childs
+        self.score = score
         self.title = title
     }
 }

@@ -148,8 +148,6 @@ open class AccordionTableViewController: UITableViewController {
                 self.expandItemAtIndex(index, parent: parent)
             }
         }
-        //let (parent, isParentCell, actualPosition) = self.findParent(index)
-        //self.tableView.reloadRows(at: [IndexPath(row: actualPosition, section: 0)], with: .automatic)
     }
     
     /**
@@ -210,28 +208,58 @@ extension AccordionTableViewController {
         
         let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
         
-        if !isParentCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath)
-            if let childCell = cell as? ChildTableViewCell {
-                childCell.textLabel!.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
-            }
-            
-            return cell
-        }
-        else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: parentCellIdentifier, for: indexPath)
-            if let parentCell = cell as? ParentTableViewCell {
-                parentCell.nameLabel!.text = self.dataSource[parent].title
-                if (self.dataSource[parent].state == .expanded){
-                    parentCell.plusView.plus = false
-                    parentCell.plusView.setNeedsDisplay()
-                } else {
-                    parentCell.plusView.plus = true
-                    parentCell.plusView.setNeedsDisplay()
+        if (String(describing: self).range(of: "GradeAccordionViewController") != nil) {
+            if !isParentCell {
+                let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath)
+                if let childCell = cell as? ChildTableViewCell {
+                    //childCell.textLabel!.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+                    childCell.nameLabel.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+                    childCell.scoreLabel.text = self.dataSource[parent].score[indexPath.row - actualPosition - 1]
                 }
+                
+                return cell
             }
-            return cell
+            else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: parentCellIdentifier, for: indexPath)
+                if let parentCell = cell as? ParentTableViewCell {
+                    parentCell.nameLabel!.text = self.dataSource[parent].title
+                    if (self.dataSource[parent].state == .expanded){
+                        parentCell.plusView.plus = false
+                        parentCell.plusView.setNeedsDisplay()
+                    } else {
+                        parentCell.plusView.plus = true
+                        parentCell.plusView.setNeedsDisplay()
+                    }
+                }
+                return cell
+            }
+        } else {
+            if !isParentCell {
+                let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath)
+                if let childCell = cell as? ResourceChildCell {
+                    childCell.nameLabel.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+                    NSLog("\(self.dataSource[parent].childs[indexPath.row - actualPosition - 1])")
+                }
+                
+                return cell
+            }
+            else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: parentCellIdentifier, for: indexPath)
+                if let parentCell = cell as? ResourceParentCell {
+                    parentCell.nameLabel!.text = self.dataSource[parent].title
+                    if (self.dataSource[parent].state == .expanded){
+                        parentCell.plusView.plus = false
+                        parentCell.plusView.setNeedsDisplay()
+                    } else {
+                        parentCell.plusView.plus = true
+                        parentCell.plusView.setNeedsDisplay()
+                    }
+                }
+                return cell
+            }
         }
+        
+
     }
     
     

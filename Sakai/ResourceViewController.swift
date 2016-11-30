@@ -1,16 +1,20 @@
 //
-//  GradeAccordionViewController.swift
+//  ResourceViewController.swift
 //  Sakai
 //
-//  Created by Katie Kuenster on 11/29/16.
+//  Created by Katie Kuenster on 11/30/16.
 //  Copyright © 2016 HCI2016. All rights reserved.
 //
 
 import UIKit
 import AccordionMenuSwift
 
-class GradeAccordionViewController: AccordionTableViewController {
-
+class ResourceViewController: AccordionTableViewController  {
+    
+    @IBAction func logoutButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let item1 = Parent(state: .collapsed, childs: ["Assignment 1", "Assignment 2", "Assignment 3"], score: ["5/5", "4/5", "3/5"], title: "Accountacy I")
@@ -23,21 +27,21 @@ class GradeAccordionViewController: AccordionTableViewController {
         self.numberOfCellsExpanded = .one
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

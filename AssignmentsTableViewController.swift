@@ -14,8 +14,8 @@ class AssignmentsTableViewController: UITableViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    let assignments = ["Assignment", "Assignment 5", "Assignment 4", "Assignment 3", "Assignment 2", "Assignment 1"]
-    let dates = ["Due", "11/1", "10/25", "10/23", "10/20", "10/15"]
+    let assignments = ["Assignment", "Assignment 1", "Assignment 2", "Assignment 3", "Assignment 4", "Assignment 5"]
+    let dates = ["Due", "10/15 11:55PM", "10/20 5:00PM", "10/23 11:55PM", "10/25 11:55PM", "11/1 9:00AM"]
     let images = ["PDF","Assignment1", "Assignment1", "Assignment1", "Assignment1", "Assignment1"]
 
     override func viewDidLoad() {
@@ -50,15 +50,15 @@ class AssignmentsTableViewController: UITableViewController {
             cell.selectionStyle = UITableViewCellSelectionStyle.none
         
             if let aCell = cell as? AssignmentTableViewCell  {
-                aCell.nameLabel.text = assignments[indexPath.row ]
+                aCell.nameLabel.text = assignments[indexPath.row]
                 aCell.dateLabel.text = dates[indexPath.row]
                 aCell.bottomBar.backgroundColor = #colorLiteral(red: 0.03206641227, green: 0.1726923287, blue: 0.3107052743, alpha: 1)
                 if (indexPath.row == 0) {
                     aCell.nameLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
                     aCell.dateLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+                    aCell.dateLabel.textAlignment = .center
                     aCell.pdfLabel.text = ""
                     
-                } else {
                 }
             }
 
