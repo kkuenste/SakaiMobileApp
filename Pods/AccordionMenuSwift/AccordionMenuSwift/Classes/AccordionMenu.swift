@@ -57,6 +57,8 @@ open class AccordionTableViewController: UITableViewController {
      */
     open func expandItemAtIndex(_ index : Int, parent: Int) {
         
+        //NSLog("total before expand: \(total)")
+        
         // the data of the childs for the specific parent cell.
         let currentSubItems = self.dataSource[parent].childs
         
@@ -77,7 +79,7 @@ open class AccordionTableViewController: UITableViewController {
         
         // update the total of rows
         self.total += currentSubItems.count
-        //self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
+        //NSLog("total after expand: \(total)")
     }
     
     /**
@@ -86,7 +88,7 @@ open class AccordionTableViewController: UITableViewController {
      - parameter index: The index of the cell to collapse
      */
     open func collapseSubItemsAtIndex(_ index : Int, parent: Int) {
-        
+        //NSLog("total before collapse: \(total)")
         var indexPaths = [IndexPath]()
         
         let numberOfChilds = self.dataSource[parent].childs.count
@@ -107,6 +109,7 @@ open class AccordionTableViewController: UITableViewController {
         if !(current == previous){
             self.total -= numberOfChilds
         }
+        //NSLog("total after collapse: \(total)")
         //self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
     
@@ -217,9 +220,9 @@ extension AccordionTableViewController {
             if !isParentCell {
                 let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath)
                 if let childCell = cell as? ChildTableViewCell {
-                    //childCell.textLabel!.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
                     childCell.nameLabel.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
                     childCell.scoreLabel.text = self.dataSource[parent].score[indexPath.row - actualPosition - 1]
+                    childCell.selectionStyle = UITableViewCellSelectionStyle.none
                 }
                 
                 return cell
@@ -243,6 +246,7 @@ extension AccordionTableViewController {
                 let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath)
                 if let childCell = cell as? ResourceChildCell {
                     childCell.nameLabel.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+                    childCell.selectionStyle = UITableViewCellSelectionStyle.none
                 }
                 
                 return cell
@@ -266,7 +270,6 @@ extension AccordionTableViewController {
 
     }
     
-    
     // MARK: UITableViewDelegate
     
     override open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -274,14 +277,13 @@ extension AccordionTableViewController {
         let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
         
         previous = current
-        current = indexPath.row
+        //current = indexPath.row
+        current = parent
         
         guard isParentCell else {
             NSLog("A child was tapped!!!")
             
             // The value of the child is indexPath.row - actualPosition - 1
-            NSLog("The value of the child is \(self.dataSource[parent].childs[indexPath.row - actualPosition - 1])")
-           
             return
         }
         
@@ -289,11 +291,8 @@ extension AccordionTableViewController {
         self.tableView.beginUpdates()
         self.updateCells(parent, index: indexPath.row)
         self.tableView.endUpdates()
-        //self.tableView.reloadRows(at: [IndexPath(row: parent, section: 0)], with: .automatic)
-        //let (parent1, isParentCell1, actualPosition1) = self.findParent(previous)
-        //self.tableView.reloadRows(at: [IndexPath(row: parent1, section: 0)], with: .automatic)
         for i in 0...total-1 {
-            self.tableView.reloadRows(at: [IndexPath(row: i, section: 0)], with: .automatic)
+           // self.tableView.reloadRows(at: [IndexPath(row: i, section: 0)], with: .automatic)
         }
         
     }
