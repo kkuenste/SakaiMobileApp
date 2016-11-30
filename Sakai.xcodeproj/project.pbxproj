@@ -22,6 +22,7 @@
 		2331C5131DCC12A400478A80 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2331C5121DCC12A400478A80 /* TabBarController.swift */; };
 		2331C5151DCC19C800478A80 /* ClassGradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2331C5141DCC19C800478A80 /* ClassGradeTableViewCell.swift */; };
 		2358D8AD1DEF3DA200A419E5 /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358D8AC1DEF3DA200A419E5 /* ResourceViewController.swift */; };
+		2358D8B31DEF495900A419E5 /* zoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358D8B21DEF495900A419E5 /* zoomViewController.swift */; };
 		23A0173A1DCC05EB009535C1 /* SyllabusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A017391DCC05EB009535C1 /* SyllabusViewController.swift */; };
 		23A92CF41DCFC0330018968C /* AnnouncementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A92CF31DCFC0330018968C /* AnnouncementTableViewController.swift */; };
 		23A92CF61DCFC1040018968C /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A92CF51DCFC1040018968C /* AnnouncementTableViewCell.swift */; };
@@ -72,6 +73,7 @@
 		2331C5121DCC12A400478A80 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2331C5141DCC19C800478A80 /* ClassGradeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassGradeTableViewCell.swift; sourceTree = "<group>"; };
 		2358D8AC1DEF3DA200A419E5 /* ResourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
+		2358D8B21DEF495900A419E5 /* zoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zoomViewController.swift; sourceTree = "<group>"; };
 		23A017391DCC05EB009535C1 /* SyllabusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyllabusViewController.swift; sourceTree = "<group>"; };
 		23A92CF31DCFC0330018968C /* AnnouncementTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementTableViewController.swift; path = ../AnnouncementTableViewController.swift; sourceTree = "<group>"; };
 		23A92CF51DCFC1040018968C /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				2321E9051DC902C000B6F268 /* AppDelegate.swift */,
 				2321E9091DC902C000B6F268 /* Main.storyboard */,
+				2358D8B21DEF495900A419E5 /* zoomViewController.swift */,
 				23BDF8AD1DEE2E4900872907 /* GradeAccordionViewController.swift */,
 				2358D8AC1DEF3DA200A419E5 /* ResourceViewController.swift */,
 				2331C5121DCC12A400478A80 /* TabBarController.swift */,
@@ -530,6 +533,7 @@
 				23BDF8AE1DEE2E4900872907 /* GradeAccordionViewController.swift in Sources */,
 				23E3046F1DCA8B8400EAE274 /* ClassDetailViewController.swift in Sources */,
 				2358D8AD1DEF3DA200A419E5 /* ResourceViewController.swift in Sources */,
+				2358D8B31DEF495900A419E5 /* zoomViewController.swift in Sources */,
 				23290DD31DCFCDD0006DBE1C /* ClassGradeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
