@@ -77,8 +77,7 @@ open class AccordionTableViewController: UITableViewController {
         
         // update the total of rows
         self.total += currentSubItems.count
-        
-        self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
+        //self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
     
     /**
@@ -108,7 +107,7 @@ open class AccordionTableViewController: UITableViewController {
         if !(current == previous){
             self.total -= numberOfChilds
         }
-        self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
+        //self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
     
     /**
@@ -244,7 +243,6 @@ extension AccordionTableViewController {
                 let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath)
                 if let childCell = cell as? ResourceChildCell {
                     childCell.nameLabel.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
-                    NSLog("\(self.dataSource[parent].childs[indexPath.row - actualPosition - 1])")
                 }
                 
                 return cell
@@ -291,6 +289,13 @@ extension AccordionTableViewController {
         self.tableView.beginUpdates()
         self.updateCells(parent, index: indexPath.row)
         self.tableView.endUpdates()
+        //self.tableView.reloadRows(at: [IndexPath(row: parent, section: 0)], with: .automatic)
+        //let (parent1, isParentCell1, actualPosition1) = self.findParent(previous)
+        //self.tableView.reloadRows(at: [IndexPath(row: parent1, section: 0)], with: .automatic)
+        for i in 0...total-1 {
+            self.tableView.reloadRows(at: [IndexPath(row: i, section: 0)], with: .automatic)
+        }
+        
     }
     
     override open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

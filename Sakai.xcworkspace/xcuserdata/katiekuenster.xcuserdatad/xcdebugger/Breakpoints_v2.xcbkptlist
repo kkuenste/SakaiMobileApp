@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/AccordionMenuSwift/AccordionMenuSwift/Classes/AccordionMenu.swift"
-            timestampString = "502226345.012931"
+            timestampString = "502229081.803677"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "collapseSubItemsAtIndex(_:parent:)"
             landmarkType = "7">
          </BreakpointContent>
