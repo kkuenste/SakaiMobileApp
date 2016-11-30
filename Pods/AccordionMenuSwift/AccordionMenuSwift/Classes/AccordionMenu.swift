@@ -74,6 +74,8 @@ open class AccordionTableViewController: UITableViewController {
         
         // update the total of rows
         self.total += currentSubItems.count
+        
+        self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
     
     /**
@@ -100,6 +102,7 @@ open class AccordionTableViewController: UITableViewController {
         
         // update the total of rows
         self.total -= numberOfChilds
+        self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
     
     /**
@@ -145,6 +148,8 @@ open class AccordionTableViewController: UITableViewController {
                 self.expandItemAtIndex(index, parent: parent)
             }
         }
+        //let (parent, isParentCell, actualPosition) = self.findParent(index)
+        //self.tableView.reloadRows(at: [IndexPath(row: actualPosition, section: 0)], with: .automatic)
     }
     
     /**
@@ -203,21 +208,32 @@ extension AccordionTableViewController {
     
     override  open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell : UITableViewCell!
-        
         let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
         
         if !isParentCell {
-            cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath)
-            cell.textLabel!.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+            let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath)
+            if let childCell = cell as? ChildTableViewCell {
+                childCell.textLabel!.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+            }
+            
+            return cell
         }
         else {
-            cell = tableView.dequeueReusableCell(withIdentifier: parentCellIdentifier, for: indexPath)
-            cell.textLabel!.text = self.dataSource[parent].title
+            let cell = tableView.dequeueReusableCell(withIdentifier: parentCellIdentifier, for: indexPath)
+            if let parentCell = cell as? ParentTableViewCell {
+                parentCell.nameLabel!.text = self.dataSource[parent].title
+                if (self.dataSource[parent].state == .expanded){
+                    parentCell.plusView.plus = false
+                    parentCell.plusView.setNeedsDisplay()
+                } else {
+                    parentCell.plusView.plus = true
+                    parentCell.plusView.setNeedsDisplay()
+                }
+            }
+            return cell
         }
-        
-        return cell
     }
+    
     
     // MARK: UITableViewDelegate
     
@@ -225,14 +241,17 @@ extension AccordionTableViewController {
         
         let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
         
+        
+        
         guard isParentCell else {
             NSLog("A child was tapped!!!")
             
             // The value of the child is indexPath.row - actualPosition - 1
             NSLog("The value of the child is \(self.dataSource[parent].childs[indexPath.row - actualPosition - 1])")
-            
+           
             return
         }
+        
         
         self.tableView.beginUpdates()
         self.updateCells(parent, index: indexPath.row)

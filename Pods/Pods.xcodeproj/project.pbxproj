@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		208653BF1ADE0B9100E75CF93451A6A1 /* Pods-SakaiTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4489D9F7FB33F0FE99134FC2250723 /* Pods-SakaiTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2359FC1F1DEE4DF60073B265 /* plusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2359FC1E1DEE4DF60073B265 /* plusView.swift */; };
+		2359FC211DEE54770073B265 /* minusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2359FC201DEE54770073B265 /* minusView.swift */; };
+		23BDF8B21DEE460A00872907 /* ParentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF8B11DEE460A00872907 /* ParentTableViewCell.swift */; };
+		23BDF8B61DEE4A1000872907 /* ChildTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF8B51DEE4A1000872907 /* ChildTableViewCell.swift */; };
 		4E0FA52F306A1A820A37E3AB228F18D4 /* AccordionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA59A290A91977E61EED0693DB678D /* AccordionMenu.swift */; };
 		59ABA5C8524D3975C6EA3D4943B0D5FA /* Pods-SakaiUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EA202AFBC4AD0D4E29CC52801C83FED /* Pods-SakaiUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59B9A98879F055132A835DAC4FAE7BE0 /* Pods-SakaiUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A08697006D6CCB2B0B4692272DF43B /* Pods-SakaiUITests-dummy.m */; };
@@ -36,38 +40,42 @@
 /* Begin PBXFileReference section */
 		09D27972B647CD60585219D367FB8445 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E80EA8E6B17B24D4C4F33F3B0D4D4A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F3450FBE8062B6596342A8DE8B011B9 /* Pods_Sakai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Sakai.framework; path = "Pods-Sakai.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F3450FBE8062B6596342A8DE8B011B9 /* Pods_Sakai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sakai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1278D17668D9D06B4341D328EDA57C4C /* Pods-SakaiTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SakaiTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1EA202AFBC4AD0D4E29CC52801C83FED /* Pods-SakaiUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SakaiUITests-umbrella.h"; sourceTree = "<group>"; };
 		21C75F6F4DAB2B1528B51030C32B5064 /* Pods-Sakai-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sakai-dummy.m"; sourceTree = "<group>"; };
+		2359FC1E1DEE4DF60073B265 /* plusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = plusView.swift; path = AccordionMenuSwift/Classes/plusView.swift; sourceTree = "<group>"; };
+		2359FC201DEE54770073B265 /* minusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = minusView.swift; path = AccordionMenuSwift/Classes/minusView.swift; sourceTree = "<group>"; };
+		23BDF8B11DEE460A00872907 /* ParentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParentTableViewCell.swift; path = AccordionMenuSwift/Classes/ParentTableViewCell.swift; sourceTree = "<group>"; };
+		23BDF8B51DEE4A1000872907 /* ChildTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildTableViewCell.swift; path = AccordionMenuSwift/Classes/ChildTableViewCell.swift; sourceTree = "<group>"; };
 		26039D8C4F5C4BEF9C9AD7309A893B3C /* Pods-Sakai-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sakai-resources.sh"; sourceTree = "<group>"; };
 		281624DFDD4514B8FDECE6F1D950A1A4 /* Pods-Sakai-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sakai-acknowledgements.plist"; sourceTree = "<group>"; };
 		290F8E299AE3FA3B2E1A419540AB4B46 /* Pods-SakaiUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SakaiUITests-frameworks.sh"; sourceTree = "<group>"; };
-		29D021ECCB92D17648CFB6A00502640E /* Pods_SakaiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SakaiUITests.framework; path = "Pods-SakaiUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29D021ECCB92D17648CFB6A00502640E /* Pods_SakaiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SakaiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A20DA0399FC442942F32C938ADA2668 /* Pods-SakaiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SakaiTests.release.xcconfig"; sourceTree = "<group>"; };
-		2CFBE89D2F9C7FE981C9774F05D71C76 /* AccordionMenuSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AccordionMenuSwift.framework; path = AccordionMenuSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CFBE89D2F9C7FE981C9774F05D71C76 /* AccordionMenuSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccordionMenuSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CAE63355E5298D706395C6CA144925E /* Pods-SakaiTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SakaiTests-dummy.m"; sourceTree = "<group>"; };
 		4129F7CE1908B234195693C0D579E7A8 /* Pods-SakaiTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SakaiTests-resources.sh"; sourceTree = "<group>"; };
 		41AECCCF15808CCF0BA48356DFC4B24C /* AccordionMenuSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AccordionMenuSwift-dummy.m"; sourceTree = "<group>"; };
 		44325EBEE57D6273B0B9AFCEB7E8FCBA /* Pods-SakaiUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SakaiUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4AC97499388C935C35210175C16B4426 /* Pods-SakaiTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SakaiTests.modulemap"; sourceTree = "<group>"; };
+		4AC97499388C935C35210175C16B4426 /* Pods-SakaiTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SakaiTests.modulemap"; sourceTree = "<group>"; };
 		5B02590EDDE02C1D1A0BA17559F8CC4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		704BFACDE05F02443B2143245417F233 /* Pods-Sakai-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sakai-umbrella.h"; sourceTree = "<group>"; };
 		724EB2ED7C8A2B7BB1FBED2F9DE91413 /* Pods-SakaiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SakaiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75FCC473D007BB55C92B55633CE24DDB /* Parent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parent.swift; path = AccordionMenuSwift/Classes/Parent.swift; sourceTree = "<group>"; };
 		77A08697006D6CCB2B0B4692272DF43B /* Pods-SakaiUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SakaiUITests-dummy.m"; sourceTree = "<group>"; };
 		78DA59A290A91977E61EED0693DB678D /* AccordionMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccordionMenu.swift; path = AccordionMenuSwift/Classes/AccordionMenu.swift; sourceTree = "<group>"; };
-		7C8FF54B85212A12639176F8D4E2BB45 /* AccordionMenuSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AccordionMenuSwift.modulemap; sourceTree = "<group>"; };
-		841B8A88F83731183F92F1A95E655B8C /* Pods-Sakai.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Sakai.modulemap"; sourceTree = "<group>"; };
+		7C8FF54B85212A12639176F8D4E2BB45 /* AccordionMenuSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AccordionMenuSwift.modulemap; sourceTree = "<group>"; };
+		841B8A88F83731183F92F1A95E655B8C /* Pods-Sakai.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Sakai.modulemap"; sourceTree = "<group>"; };
 		89DFD4266399B72FFF7E3A56CB57D0AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ECCEC0B6C39217411A5E9F71A96FB32 /* Pods-Sakai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sakai.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9931D5305DACA7D7449F018F350F2C56 /* Pods-Sakai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sakai.debug.xcconfig"; sourceTree = "<group>"; };
 		9E4D7777101B4E7E064073484CC75755 /* Pods-Sakai-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sakai-frameworks.sh"; sourceTree = "<group>"; };
 		A1B1CA40B64394AAA85CF8DBB2E5CA1D /* Pods-SakaiUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SakaiUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AB486974409803B3093904D82BE36B52 /* AccordionMenuSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AccordionMenuSwift-umbrella.h"; sourceTree = "<group>"; };
 		AC09A48E8BD37C198662EDCC9C51063E /* Pods-SakaiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SakaiTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B09490142A1BE9757DFDAFEBE6626739 /* Pods-SakaiUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SakaiUITests.modulemap"; sourceTree = "<group>"; };
+		B09490142A1BE9757DFDAFEBE6626739 /* Pods-SakaiUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SakaiUITests.modulemap"; sourceTree = "<group>"; };
 		B6825AE7F890161E5FB02AD7A1E9065E /* Pods-Sakai-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sakai-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B6CED1C9F4003CC811112ABA9DFECDF8 /* Pods-SakaiTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SakaiTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BA78DE4FE2BA316E0B61866CB4C2DF95 /* AccordionMenuSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AccordionMenuSwift-prefix.pch"; sourceTree = "<group>"; };
@@ -76,7 +84,7 @@
 		C191F63326A6D085CA6376D6B0385E5B /* Pods-SakaiUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SakaiUITests-resources.sh"; sourceTree = "<group>"; };
 		C205D46C47DBE107A0E900A45A75C06E /* AccordionMenuSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AccordionMenuSwift.xcconfig; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CD3A0C27392F56F710000CE4C438E8F8 /* Pods_SakaiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SakaiTests.framework; path = "Pods-SakaiTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3A0C27392F56F710000CE4C438E8F8 /* Pods_SakaiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SakaiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B3FC6E813F9AF6057C5AF3D3D38F6F /* Pods-SakaiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SakaiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,10 +164,13 @@
 			isa = PBXGroup;
 			children = (
 				78DA59A290A91977E61EED0693DB678D /* AccordionMenu.swift */,
+				2359FC201DEE54770073B265 /* minusView.swift */,
+				23BDF8B11DEE460A00872907 /* ParentTableViewCell.swift */,
 				75FCC473D007BB55C92B55633CE24DDB /* Parent.swift */,
+				23BDF8B51DEE4A1000872907 /* ChildTableViewCell.swift */,
+				2359FC1E1DEE4DF60073B265 /* plusView.swift */,
 				FE1BE7326DD9A1D37667EDD804C34290 /* Support Files */,
 			);
-			name = AccordionMenuSwift;
 			path = AccordionMenuSwift;
 			sourceTree = "<group>";
 		};
@@ -409,7 +420,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0FA52F306A1A820A37E3AB228F18D4 /* AccordionMenu.swift in Sources */,
+				23BDF8B21DEE460A00872907 /* ParentTableViewCell.swift in Sources */,
 				5BC1F8348FE132BBC99EA0F162D238C9 /* AccordionMenuSwift-dummy.m in Sources */,
+				23BDF8B61DEE4A1000872907 /* ChildTableViewCell.swift in Sources */,
+				2359FC211DEE54770073B265 /* minusView.swift in Sources */,
+				2359FC1F1DEE4DF60073B265 /* plusView.swift in Sources */,
 				9692341D3B7540B41FFA2C25A6975267 /* Parent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
