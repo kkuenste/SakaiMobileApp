@@ -24,11 +24,11 @@
 		2358D8AD1DEF3DA200A419E5 /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358D8AC1DEF3DA200A419E5 /* ResourceViewController.swift */; };
 		2358D8B31DEF495900A419E5 /* zoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358D8B21DEF495900A419E5 /* zoomViewController.swift */; };
 		2358D8B51DEF58AB00A419E5 /* OfficeHourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358D8B41DEF58AB00A419E5 /* OfficeHourViewController.swift */; };
-		23A0173A1DCC05EB009535C1 /* SyllabusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A017391DCC05EB009535C1 /* SyllabusViewController.swift */; };
 		23A92CF41DCFC0330018968C /* AnnouncementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A92CF31DCFC0330018968C /* AnnouncementTableViewController.swift */; };
 		23A92CF61DCFC1040018968C /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A92CF51DCFC1040018968C /* AnnouncementTableViewCell.swift */; };
 		23B8A4A81DCFE63A001F4DEA /* AssignmentPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B8A4A71DCFE63A001F4DEA /* AssignmentPDFViewController.swift */; };
 		23BDF8AE1DEE2E4900872907 /* GradeAccordionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF8AD1DEE2E4900872907 /* GradeAccordionViewController.swift */; };
+		23E28BB41DF0B20100290088 /* sectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E28BB31DF0B20100290088 /* sectionTableViewCell.swift */; };
 		23E3046F1DCA8B8400EAE274 /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3046E1DCA8B8400EAE274 /* ClassDetailViewController.swift */; };
 		23E500E11DEF9C4D00DE1A54 /* GradeTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E500E01DEF9C4D00DE1A54 /* GradeTitleCell.swift */; };
 		288E062A17A6132AF1E145B3 /* Pods_SakaiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A41FF36A297C9901B4A1255 /* Pods_SakaiUITests.framework */; };
@@ -77,11 +77,11 @@
 		2358D8AC1DEF3DA200A419E5 /* ResourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
 		2358D8B21DEF495900A419E5 /* zoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zoomViewController.swift; sourceTree = "<group>"; };
 		2358D8B41DEF58AB00A419E5 /* OfficeHourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeHourViewController.swift; sourceTree = "<group>"; };
-		23A017391DCC05EB009535C1 /* SyllabusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyllabusViewController.swift; sourceTree = "<group>"; };
 		23A92CF31DCFC0330018968C /* AnnouncementTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementTableViewController.swift; path = ../AnnouncementTableViewController.swift; sourceTree = "<group>"; };
 		23A92CF51DCFC1040018968C /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 		23B8A4A71DCFE63A001F4DEA /* AssignmentPDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentPDFViewController.swift; sourceTree = "<group>"; };
 		23BDF8AD1DEE2E4900872907 /* GradeAccordionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeAccordionViewController.swift; sourceTree = "<group>"; };
+		23E28BB31DF0B20100290088 /* sectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sectionTableViewCell.swift; sourceTree = "<group>"; };
 		23E3046E1DCA8B8400EAE274 /* ClassDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
 		23E500E01DEF9C4D00DE1A54 /* GradeTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTitleCell.swift; sourceTree = "<group>"; };
 		4714B66BDFC982914A5B5241 /* Pods-Sakai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sakai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sakai/Pods-Sakai.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,7 +162,6 @@
 				23B78A0F1DD28CE000364B17 /* Announcements */,
 				23B78A101DD28CF600364B17 /* Assignments */,
 				23B78A121DD28D5300364B17 /* Grades */,
-				23A017391DCC05EB009535C1 /* SyllabusViewController.swift */,
 				2321E90E1DC902C000B6F268 /* LaunchScreen.storyboard */,
 				2321E9111DC902C000B6F268 /* Info.plist */,
 				2321E90C1DC902C000B6F268 /* Assets.xcassets */,
@@ -213,6 +212,7 @@
 				23290DD21DCFCDD0006DBE1C /* ClassGradeTableViewController.swift */,
 				2331C5141DCC19C800478A80 /* ClassGradeTableViewCell.swift */,
 				23E500E01DEF9C4D00DE1A54 /* GradeTitleCell.swift */,
+				23E28BB31DF0B20100290088 /* sectionTableViewCell.swift */,
 			);
 			name = Grades;
 			sourceTree = "<group>";
@@ -526,7 +526,7 @@
 			files = (
 				23B8A4A81DCFE63A001F4DEA /* AssignmentPDFViewController.swift in Sources */,
 				2321E9361DC909A700B6F268 /* ClassTableViewController.swift in Sources */,
-				23A0173A1DCC05EB009535C1 /* SyllabusViewController.swift in Sources */,
+				23E28BB41DF0B20100290088 /* sectionTableViewCell.swift in Sources */,
 				2331C5151DCC19C800478A80 /* ClassGradeTableViewCell.swift in Sources */,
 				23A92CF61DCFC1040018968C /* AnnouncementTableViewCell.swift in Sources */,
 				2331C5131DCC12A400478A80 /* TabBarController.swift in Sources */,

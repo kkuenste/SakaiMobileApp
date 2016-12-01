@@ -1,19 +1,16 @@
 //
-//  ClassGradeTableViewCell.swift
+//  sectionTableViewCell.swift
 //  Sakai
 //
-//  Created by Katie Kuenster on 11/3/16.
+//  Created by Katie Kuenster on 12/1/16.
 //  Copyright © 2016 HCI2016. All rights reserved.
 //
 
 import UIKit
 
-class ClassGradeTableViewCell: UITableViewCell {
-    @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var commentLabel: UILabel!
-    @IBOutlet weak var itemLabel: UILabel!
+class sectionTableViewCell: UITableViewCell {
 
-    
+    @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

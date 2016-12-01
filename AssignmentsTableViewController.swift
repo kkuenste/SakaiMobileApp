@@ -21,8 +21,10 @@ class AssignmentsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.tableView.separatorColor = #colorLiteral(red: 0.03206641227, green: 0.1726923287, blue: 0.3107052743, alpha: 1)
         tableView.allowsSelection = false
+        
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,15 +47,15 @@ class AssignmentsTableViewController: UITableViewController {
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
+            cell.preservesSuperviewLayoutMargins = false
+            cell.separatorInset = UIEdgeInsets.zero
+            cell.layoutMargins = UIEdgeInsets.zero
             return cell
         }
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "assignCell", for: indexPath)
-
-                cell.selectionStyle = UITableViewCellSelectionStyle.none
         
                 if let aCell = cell as? AssignmentTableViewCell  {
-                    aCell.bottomBar.backgroundColor = #colorLiteral(red: 0.03206641227, green: 0.1726923287, blue: 0.3107052743, alpha: 1)
                     if (indexPath.row == 1) {
                         aCell.nameLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
                         aCell.nameLabel.text = "Assignment"
@@ -72,6 +74,9 @@ class AssignmentsTableViewController: UITableViewController {
                     
                 }
             }
+            cell.preservesSuperviewLayoutMargins = false
+            cell.separatorInset = UIEdgeInsets.zero
+            cell.layoutMargins = UIEdgeInsets.zero
             return cell
         }
     }

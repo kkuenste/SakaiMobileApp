@@ -10,19 +10,19 @@ import UIKit
 
 class ClassGradeTableViewController: UITableViewController {
 
-    
     @IBAction func doneButton(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }
+
+    
+    let items = ["title", "Assignments", "Assigment 1", "Assignment 2", "Assignment 3", "Exams", "Exam 1", "Exam 2"]
+    let score = ["title", "Assignments", "5/5", "4/5", "4.5/5", "Exams", "73/80", "75/80"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.tableView.separatorColor = #colorLiteral(red: 0.03206641227, green: 0.1726923287, blue: 0.3107052743, alpha: 1)
+        tableView.allowsSelection = false
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,25 +39,42 @@ class ClassGradeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return items.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (indexPath.row == 0) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
-            if let titleCell = cell as? GradeTitleCell {
-                //titleCell.nameLabel.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
-            }
+            //if let titleCell = cell as? GradeTitleCell {
+            //    //titleCell.nameLabel.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+            //}
+            cell.preservesSuperviewLayoutMargins = false
+            cell.separatorInset = UIEdgeInsets.zero
+            cell.layoutMargins = UIEdgeInsets.zero
             return cell
         }
-        else {
+        else if (indexPath.row == 1) || (indexPath.row == 5){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell", for: indexPath)
+            if let sectionCell = cell as? sectionTableViewCell {
+                sectionCell.titleLabel.text = items[indexPath.row]
+            }
+            cell.preservesSuperviewLayoutMargins = false
+            cell.separatorInset = UIEdgeInsets.zero
+            cell.layoutMargins = UIEdgeInsets.zero
+            return cell
+        } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "gradeCell", for: indexPath)
             if let gradeCell = cell as? ClassGradeTableViewCell {
-                //gradeCell.nameLabel!.text = self.dataSource[parent].title
+                gradeCell.itemLabel!.text = items[indexPath.row]
+                gradeCell.scoreLabel.text = score[indexPath.row]
             }
+            cell.preservesSuperviewLayoutMargins = false
+            cell.separatorInset = UIEdgeInsets.zero
+            cell.layoutMargins = UIEdgeInsets.zero
             return cell
         }
+        
     }
     
 
