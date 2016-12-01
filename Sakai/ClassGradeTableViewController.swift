@@ -34,23 +34,32 @@ class ClassGradeTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 5
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        if (indexPath.row == 0) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
+            if let titleCell = cell as? GradeTitleCell {
+                //titleCell.nameLabel.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+            }
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "gradeCell", for: indexPath)
+            if let gradeCell = cell as? ClassGradeTableViewCell {
+                //gradeCell.nameLabel!.text = self.dataSource[parent].title
+            }
+            return cell
+        }
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

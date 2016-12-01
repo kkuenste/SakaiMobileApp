@@ -11,7 +11,6 @@
 		2358D8AF1DEF42AE00A419E5 /* ResourceParentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358D8AE1DEF42AE00A419E5 /* ResourceParentCell.swift */; };
 		2358D8B11DEF42C300A419E5 /* ResourceChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358D8B01DEF42C300A419E5 /* ResourceChildCell.swift */; };
 		2359FC1F1DEE4DF60073B265 /* plusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2359FC1E1DEE4DF60073B265 /* plusView.swift */; };
-		2359FC211DEE54770073B265 /* minusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2359FC201DEE54770073B265 /* minusView.swift */; };
 		23BDF8B21DEE460A00872907 /* ParentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF8B11DEE460A00872907 /* ParentTableViewCell.swift */; };
 		23BDF8B61DEE4A1000872907 /* ChildTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF8B51DEE4A1000872907 /* ChildTableViewCell.swift */; };
 		4E0FA52F306A1A820A37E3AB228F18D4 /* AccordionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA59A290A91977E61EED0693DB678D /* AccordionMenu.swift */; };
@@ -49,7 +48,6 @@
 		2358D8AE1DEF42AE00A419E5 /* ResourceParentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceParentCell.swift; path = AccordionMenuSwift/Classes/ResourceParentCell.swift; sourceTree = "<group>"; };
 		2358D8B01DEF42C300A419E5 /* ResourceChildCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceChildCell.swift; path = AccordionMenuSwift/Classes/ResourceChildCell.swift; sourceTree = "<group>"; };
 		2359FC1E1DEE4DF60073B265 /* plusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = plusView.swift; path = AccordionMenuSwift/Classes/plusView.swift; sourceTree = "<group>"; };
-		2359FC201DEE54770073B265 /* minusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = minusView.swift; path = AccordionMenuSwift/Classes/minusView.swift; sourceTree = "<group>"; };
 		23BDF8B11DEE460A00872907 /* ParentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParentTableViewCell.swift; path = AccordionMenuSwift/Classes/ParentTableViewCell.swift; sourceTree = "<group>"; };
 		23BDF8B51DEE4A1000872907 /* ChildTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildTableViewCell.swift; path = AccordionMenuSwift/Classes/ChildTableViewCell.swift; sourceTree = "<group>"; };
 		26039D8C4F5C4BEF9C9AD7309A893B3C /* Pods-Sakai-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sakai-resources.sh"; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 				78DA59A290A91977E61EED0693DB678D /* AccordionMenu.swift */,
 				2358D8AE1DEF42AE00A419E5 /* ResourceParentCell.swift */,
 				2358D8B01DEF42C300A419E5 /* ResourceChildCell.swift */,
-				2359FC201DEE54770073B265 /* minusView.swift */,
 				23BDF8B11DEE460A00872907 /* ParentTableViewCell.swift */,
 				75FCC473D007BB55C92B55633CE24DDB /* Parent.swift */,
 				23BDF8B51DEE4A1000872907 /* ChildTableViewCell.swift */,
@@ -430,7 +427,6 @@
 				5BC1F8348FE132BBC99EA0F162D238C9 /* AccordionMenuSwift-dummy.m in Sources */,
 				2358D8B11DEF42C300A419E5 /* ResourceChildCell.swift in Sources */,
 				23BDF8B61DEE4A1000872907 /* ChildTableViewCell.swift in Sources */,
-				2359FC211DEE54770073B265 /* minusView.swift in Sources */,
 				2358D8AF1DEF42AE00A419E5 /* ResourceParentCell.swift in Sources */,
 				2359FC1F1DEE4DF60073B265 /* plusView.swift in Sources */,
 				9692341D3B7540B41FFA2C25A6975267 /* Parent.swift in Sources */,

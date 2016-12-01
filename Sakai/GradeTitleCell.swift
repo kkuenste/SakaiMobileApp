@@ -1,19 +1,15 @@
 //
-//  ParentTableViewCell.swift
-//  Pods
+//  GradeTitleCell.swift
+//  Sakai
 //
-//  Created by Katie Kuenster on 11/29/16.
-//
+//  Created by Katie Kuenster on 11/30/16.
+//  Copyright © 2016 HCI2016. All rights reserved.
 //
 
 import UIKit
 
-class ParentTableViewCell: UITableViewCell {
+class GradeTitleCell: UITableViewCell {
 
-    @IBOutlet weak var nameLabel: UILabel!
-    
-    @IBOutlet weak var plusView: plusView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

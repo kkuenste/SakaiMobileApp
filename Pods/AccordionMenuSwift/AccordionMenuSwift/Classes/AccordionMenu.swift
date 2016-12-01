@@ -224,6 +224,9 @@ extension AccordionTableViewController {
                     childCell.scoreLabel.text = self.dataSource[parent].score[indexPath.row - actualPosition - 1]
                     childCell.selectionStyle = UITableViewCellSelectionStyle.none
                 }
+                cell.preservesSuperviewLayoutMargins = false
+                cell.separatorInset = UIEdgeInsets.zero
+                cell.layoutMargins = UIEdgeInsets.zero
                 
                 return cell
             }
@@ -238,7 +241,12 @@ extension AccordionTableViewController {
                         parentCell.plusView.plus = true
                         parentCell.plusView.setNeedsDisplay()
                     }
+                    parentCell.selectionStyle = UITableViewCellSelectionStyle.none
                 }
+                cell.preservesSuperviewLayoutMargins = false
+                cell.separatorInset = UIEdgeInsets.zero
+                cell.layoutMargins = UIEdgeInsets.zero
+                
                 return cell
             }
         } else {
@@ -248,6 +256,9 @@ extension AccordionTableViewController {
                     childCell.nameLabel.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
                     childCell.selectionStyle = UITableViewCellSelectionStyle.none
                 }
+                cell.preservesSuperviewLayoutMargins = false
+                cell.separatorInset = UIEdgeInsets.zero
+                cell.layoutMargins = UIEdgeInsets.zero
                 
                 return cell
             }
@@ -262,7 +273,12 @@ extension AccordionTableViewController {
                         parentCell.plusView.plus = true
                         parentCell.plusView.setNeedsDisplay()
                     }
+                    parentCell.selectionStyle = UITableViewCellSelectionStyle.none
                 }
+                cell.preservesSuperviewLayoutMargins = false
+                cell.separatorInset = UIEdgeInsets.zero
+                cell.layoutMargins = UIEdgeInsets.zero
+                
                 return cell
             }
         }
@@ -292,7 +308,7 @@ extension AccordionTableViewController {
         self.updateCells(parent, index: indexPath.row)
         self.tableView.endUpdates()
         for i in 0...total-1 {
-           // self.tableView.reloadRows(at: [IndexPath(row: i, section: 0)], with: .automatic)
+           self.tableView.reloadRows(at: [IndexPath(row: i, section: 0)], with: .automatic)
         }
         
     }

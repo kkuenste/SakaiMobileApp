@@ -21,6 +21,8 @@ class ClassTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.tableView.separatorColor = #colorLiteral(red: 0.03206641227, green: 0.1726923287, blue: 0.3107052743, alpha: 1)
+        self.tableView.separatorColor = #colorLiteral(red: 0.6877453923, green: 0.5632880926, blue: 0.3085308671, alpha: 1)
         tableView.alwaysBounceVertical = false
         tableView.isScrollEnabled = false
         tableView.tableFooterView = UIView()
@@ -49,6 +51,10 @@ class ClassTableViewController: UITableViewController {
             classCell.classNumberLabel.text = courseNumbers[indexPath.row]
             classCell.classImage.image = UIImage(named: courseImages[indexPath.row])
         }
+        
+        cell.preservesSuperviewLayoutMargins = false
+        cell.separatorInset = UIEdgeInsets.zero
+        cell.layoutMargins = UIEdgeInsets.zero
         
         return cell
 

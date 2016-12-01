@@ -14,9 +14,9 @@ class AssignmentsTableViewController: UITableViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    let assignments = ["Assignment", "Assignment 1", "Assignment 2", "Assignment 3", "Assignment 4", "Assignment 5"]
-    let dates = ["Due", "10/15 11:55PM", "10/20 5:00PM", "10/23 11:55PM", "10/25 11:55PM", "11/1 9:00AM"]
-    let images = ["PDF","Assignment1", "Assignment1", "Assignment1", "Assignment1", "Assignment1"]
+    let assignments = ["", "Assignment", "Assignment 1", "Assignment 2", "Assignment 3", "Assignment 4", "Assignment 5"]
+    let dates = ["", "Due", "10/15 11:55PM", "10/20 5:00PM", "10/23 11:55PM", "10/25 11:55PM", "11/1 9:00AM"]
+    let status = ["", "Status", "Graded", "Graded", "Submitted", "In Progress", ""]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,36 +33,47 @@ class AssignmentsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return assignments.count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "assignCell", for: indexPath)
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "assignCell", for: indexPath)
 
-            cell.selectionStyle = UITableViewCellSelectionStyle.none
+                cell.selectionStyle = UITableViewCellSelectionStyle.none
         
-            if let aCell = cell as? AssignmentTableViewCell  {
-                aCell.nameLabel.text = assignments[indexPath.row]
-                aCell.dateLabel.text = dates[indexPath.row]
-                aCell.bottomBar.backgroundColor = #colorLiteral(red: 0.03206641227, green: 0.1726923287, blue: 0.3107052743, alpha: 1)
-                if (indexPath.row == 0) {
-                    aCell.nameLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
-                    aCell.dateLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
-                    aCell.dateLabel.textAlignment = .center
-                    aCell.pdfLabel.text = ""
+                if let aCell = cell as? AssignmentTableViewCell  {
+                    aCell.bottomBar.backgroundColor = #colorLiteral(red: 0.03206641227, green: 0.1726923287, blue: 0.3107052743, alpha: 1)
+                    if (indexPath.row == 1) {
+                        aCell.nameLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+                        aCell.nameLabel.text = "Assignment"
+                        aCell.dateLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+                        aCell.pdfLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+                        aCell.dateLabel.textAlignment = .center
+                        aCell.dateLabel.text = "Due"
+                        aCell.pdfLabel.textAlignment = .center
+                    } else {
+                        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Assignment \(indexPath.row + 1)")
+                        attributeString.addAttribute(NSUnderlineStyleAttributeName, value: 1, range: NSMakeRange(0, attributeString.length))
+                        aCell.nameLabel.attributedText = attributeString
+                        //aCell.nameLabel.text = assignments[indexPath.row]
+                        aCell.dateLabel.text = dates[indexPath.row]
+                        aCell.pdfLabel.text = status[indexPath.row]
                     
                 }
             }
-
-        return cell
+            return cell
+        }
     }
 
 

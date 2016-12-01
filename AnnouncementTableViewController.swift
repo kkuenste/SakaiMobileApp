@@ -10,9 +10,9 @@ import UIKit
 
 class AnnouncementTableViewController: UITableViewController {
     
-    let subject = ["Class Canceled", "Office Hours Changed", "Exam 2 Scheduled", "Assignment 5 Posted", "Assignment 3 Graded"]
-    let body = ["Class is canceled this Wednesday, I will be away at a conference. Please stop by my office is you have any questions or concerns.", "All office hours for Friday have been canceled. Additional office hours are being offered on Thursday from 12-2pm", "The date for Exam 2 has been set for Wednesday November 9th at 9:30 AM in Debartolo 117.", "Assignment 5 has been posted. It is due next Tuesday at 4pm. This assignment will cover everything from last homework as well.", "The grades for Assignment 3 have been posted. The average score was 50/60. Max Score: 60/60, Min Score: 30/60."]
-    let date = ["Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM"]
+    let subject = ["", "Class Canceled", "Office Hours Changed", "Exam 2 Scheduled", "Assignment 5 Posted", "Assignment 3 Graded"]
+    let body = ["", "Class is canceled this Wednesday, I will be away at a conference. Please stop by my office is you have any questions or concerns.", "All office hours for Friday have been canceled. Additional office hours are being offered on Thursday from 12-2pm", "The date for Exam 2 has been set for Wednesday November 9th at 9:30 AM in Debartolo 117.", "Assignment 5 has been posted. It is due next Tuesday at 4pm. This assignment will cover everything from last homework as well.", "The grades for Assignment 3 have been posted. The average score was 50/60. Max Score: 60/60, Min Score: 30/60."]
+    let date = ["", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM"]
 
     @IBAction func donButton(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
@@ -40,18 +40,34 @@ class AnnouncementTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ACell", for: indexPath)
         
-        if let aCell = cell as? AnnouncementTableViewCell  {
-            aCell.subjectLabel.text = subject[indexPath.row]
-            aCell.bodyLabel.text = body[indexPath.row]
-            aCell.dateLabel.text = date[indexPath.row]
-            if ((indexPath.row)%2 == 0) {
-                aCell.colorView.backgroundColor = #colorLiteral(red: 0.8920779824, green: 0.9151738882, blue: 0.9310659766, alpha: 1)
-            }
+        if (indexPath.row == 0) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
+            return cell
         }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ACell", for: indexPath)
+        
+            if let aCell = cell as? AnnouncementTableViewCell  {
+                aCell.subjectLabel.text = subject[indexPath.row]
+                aCell.bodyLabel.text = body[indexPath.row]
+                aCell.dateLabel.text = date[indexPath.row]
+                if ((indexPath.row)%2 == 1) {
+                    aCell.colorView.backgroundColor = #colorLiteral(red: 0.8920779824, green: 0.9151738882, blue: 0.9310659766, alpha: 1)
+                }
+            }
         
         return cell
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if (indexPath.row == 0) {
+            return 44.0
+        }
+        else {
+            return 153.0
+        }
     }
 
 
