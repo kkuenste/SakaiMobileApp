@@ -52,6 +52,10 @@ class ClassTableViewController: UITableViewController {
             classCell.classImage.image = UIImage(named: courseImages[indexPath.row])
         }
         
+        let colorView = UIView()
+        colorView.backgroundColor = #colorLiteral(red: 0.8921611309, green: 0.9120418429, blue: 0.9278852344, alpha: 1)
+        cell.selectedBackgroundView = colorView
+        
         cell.preservesSuperviewLayoutMargins = false
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero

@@ -10,6 +10,7 @@ import UIKit
 
 class ParentTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var percentLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var plusView: plusView!

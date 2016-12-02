@@ -22,14 +22,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             textField.delegate = self
         }
         
+        self.present(alert, animated: true, completion: showFunc)
         
+    }
+    
+    func showFunc() -> Void {
         let alert2 = UIAlertController(title: "Email Sent", message: "", preferredStyle: UIAlertControllerStyle.alert)
         alert2.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
         alert2.view.tintColor = #colorLiteral(red: 0.02541817166, green: 0.1732199192, blue: 0.3195238113, alpha: 1)
-        
-        self.present(alert, animated: true, completion: nil)
-        
-        //self.present(alert, animated: true, completion: self.present(alert2, animated: true, completion: nil))
+        self.present(alert2, animated: true, completion: nil)
     }
     
     @IBOutlet weak var netIDTextField: UITextField!
@@ -41,6 +42,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginButtonView.layer.cornerRadius = 5
         passwordTextField.delegate = self
         netIDTextField.delegate = self
+        netIDTextField.tintColor = #colorLiteral(red: 0.02541817166, green: 0.1732199192, blue: 0.3195238113, alpha: 1)
+        passwordTextField.tintColor = #colorLiteral(red: 0.02541817166, green: 0.1732199192, blue: 0.3195238113, alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,7 +54,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         return false
     }
-    
     
 
     // MARK: - Navigation

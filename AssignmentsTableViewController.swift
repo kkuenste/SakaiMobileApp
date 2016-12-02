@@ -80,6 +80,15 @@ class AssignmentsTableViewController: UITableViewController {
             return cell
         }
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if (indexPath.row > 0) {
+            return 44.0
+        }
+        else {
+            return 55
+        }
+    }
 
 
     /*

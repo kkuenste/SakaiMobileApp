@@ -163,7 +163,6 @@
 				23B78A101DD28CF600364B17 /* Assignments */,
 				23B78A121DD28D5300364B17 /* Grades */,
 				2321E90E1DC902C000B6F268 /* LaunchScreen.storyboard */,
-				2321E9111DC902C000B6F268 /* Info.plist */,
 				2321E90C1DC902C000B6F268 /* Assets.xcassets */,
 			);
 			path = Sakai;
@@ -213,6 +212,7 @@
 				2331C5141DCC19C800478A80 /* ClassGradeTableViewCell.swift */,
 				23E500E01DEF9C4D00DE1A54 /* GradeTitleCell.swift */,
 				23E28BB31DF0B20100290088 /* sectionTableViewCell.swift */,
+				2321E9111DC902C000B6F268 /* Info.plist */,
 			);
 			name = Grades;
 			sourceTree = "<group>";

@@ -234,6 +234,7 @@ extension AccordionTableViewController {
                 let cell = tableView.dequeueReusableCell(withIdentifier: parentCellIdentifier, for: indexPath)
                 if let parentCell = cell as? ParentTableViewCell {
                     parentCell.nameLabel!.text = self.dataSource[parent].title
+                    parentCell.percentLabel.text = calculatePercent(scores: self.dataSource[parent].score)
                     if (self.dataSource[parent].state == .expanded){
                         parentCell.plusView.plus = false
                         parentCell.plusView.setNeedsDisplay()
@@ -316,4 +317,16 @@ extension AccordionTableViewController {
     override open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return !self.findParent(indexPath.row).isParentCell ? 44.0 : 64.0
     }
+}
+
+func calculatePercent(scores: [String]) -> String {
+    var total = 0.0
+    var score = 0.0
+    for i in scores {
+        var myStringArr = i.components(separatedBy: "/")
+        score += Double(myStringArr[0])!
+        total += Double(myStringArr[1])!
+    }
+    var percent = Int(round((score/total)*100.0))
+    return "\(percent)%"
 }
