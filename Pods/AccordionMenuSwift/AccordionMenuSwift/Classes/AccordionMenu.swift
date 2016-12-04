@@ -254,12 +254,17 @@ extension AccordionTableViewController {
             if !isParentCell {
                 let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath)
                 if let childCell = cell as? ResourceChildCell {
-                    childCell.nameLabel.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+                    
+                    let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "\(self.dataSource[parent].childs[indexPath.row - actualPosition - 1])")
+                    attributeString.addAttribute(NSUnderlineStyleAttributeName, value: 1, range: NSMakeRange(0, attributeString.length))                    
+                    childCell.nameLabel.attributedText = attributeString
                     childCell.selectionStyle = UITableViewCellSelectionStyle.none
                 }
                 cell.preservesSuperviewLayoutMargins = false
                 cell.separatorInset = UIEdgeInsets.zero
                 cell.layoutMargins = UIEdgeInsets.zero
+                
+                
                 
                 return cell
             }
@@ -274,6 +279,7 @@ extension AccordionTableViewController {
                         parentCell.plusView.plus = true
                         parentCell.plusView.setNeedsDisplay()
                     }
+                    
                     parentCell.selectionStyle = UITableViewCellSelectionStyle.none
                 }
                 cell.preservesSuperviewLayoutMargins = false

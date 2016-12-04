@@ -24,6 +24,7 @@
 		2358D8AD1DEF3DA200A419E5 /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358D8AC1DEF3DA200A419E5 /* ResourceViewController.swift */; };
 		2358D8B31DEF495900A419E5 /* zoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358D8B21DEF495900A419E5 /* zoomViewController.swift */; };
 		2358D8B51DEF58AB00A419E5 /* OfficeHourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358D8B41DEF58AB00A419E5 /* OfficeHourViewController.swift */; };
+		236AB1EE1DF3A75600EAF682 /* ResourcePDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236AB1ED1DF3A75600EAF682 /* ResourcePDFViewController.swift */; };
 		23A92CF41DCFC0330018968C /* AnnouncementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A92CF31DCFC0330018968C /* AnnouncementTableViewController.swift */; };
 		23A92CF61DCFC1040018968C /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A92CF51DCFC1040018968C /* AnnouncementTableViewCell.swift */; };
 		23B8A4A81DCFE63A001F4DEA /* AssignmentPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B8A4A71DCFE63A001F4DEA /* AssignmentPDFViewController.swift */; };
@@ -77,6 +78,7 @@
 		2358D8AC1DEF3DA200A419E5 /* ResourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
 		2358D8B21DEF495900A419E5 /* zoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zoomViewController.swift; sourceTree = "<group>"; };
 		2358D8B41DEF58AB00A419E5 /* OfficeHourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeHourViewController.swift; sourceTree = "<group>"; };
+		236AB1ED1DF3A75600EAF682 /* ResourcePDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcePDFViewController.swift; sourceTree = "<group>"; };
 		23A92CF31DCFC0330018968C /* AnnouncementTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementTableViewController.swift; path = ../AnnouncementTableViewController.swift; sourceTree = "<group>"; };
 		23A92CF51DCFC1040018968C /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 		23B8A4A71DCFE63A001F4DEA /* AssignmentPDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentPDFViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				2321E9051DC902C000B6F268 /* AppDelegate.swift */,
 				2321E9091DC902C000B6F268 /* Main.storyboard */,
+				236AB1ED1DF3A75600EAF682 /* ResourcePDFViewController.swift */,
 				2358D8B41DEF58AB00A419E5 /* OfficeHourViewController.swift */,
 				2358D8B21DEF495900A419E5 /* zoomViewController.swift */,
 				23BDF8AD1DEE2E4900872907 /* GradeAccordionViewController.swift */,
@@ -531,6 +534,7 @@
 				23A92CF61DCFC1040018968C /* AnnouncementTableViewCell.swift in Sources */,
 				2331C5131DCC12A400478A80 /* TabBarController.swift in Sources */,
 				2321E9341DC908DE00B6F268 /* LoginViewController.swift in Sources */,
+				236AB1EE1DF3A75600EAF682 /* ResourcePDFViewController.swift in Sources */,
 				2321E9061DC902C000B6F268 /* AppDelegate.swift in Sources */,
 				23A92CF41DCFC0330018968C /* AnnouncementTableViewController.swift in Sources */,
 				2321E93A1DC916B800B6F268 /* ClassTableViewCell.swift in Sources */,

@@ -13,25 +13,35 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginButtonView: UIView!
     @IBOutlet weak var forgotPasswordLabel: UIButton!
     
+    var show = false
+    
     @IBAction func forgotPasswordButton(_ sender: AnyObject) {
+       
+        let alert2 = UIAlertController(title: "Email Sent", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        alert2.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        alert2.view.tintColor = #colorLiteral(red: 0.02541817166, green: 0.1732199192, blue: 0.3195238113, alpha: 1)
+        
         let alert = UIAlertController(title: "Reset Password", message: "Enter your email to receive a link to reset your password.", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Send Email", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Send Email", style: UIAlertActionStyle.default, handler: {(alert: UIAlertAction!) in (self.present(alert2, animated: true, completion: nil))}))
         alert.view.tintColor = #colorLiteral(red: 0.02541817166, green: 0.1732199192, blue: 0.3195238113, alpha: 1)
         alert.addTextField { (textField : UITextField!) -> Void in
             textField.placeholder = "Email"
             textField.delegate = self
         }
+
         
-        self.present(alert, animated: true, completion: showFunc)
+        self.present(alert, animated: true, completion: nil)
         
     }
     
+    /*
     func showFunc() -> Void {
         let alert2 = UIAlertController(title: "Email Sent", message: "", preferredStyle: UIAlertControllerStyle.alert)
         alert2.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
         alert2.view.tintColor = #colorLiteral(red: 0.02541817166, green: 0.1732199192, blue: 0.3195238113, alpha: 1)
         self.present(alert2, animated: true, completion: nil)
     }
+ */
     
     @IBOutlet weak var netIDTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
