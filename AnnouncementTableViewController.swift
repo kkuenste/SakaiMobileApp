@@ -13,8 +13,8 @@ class AnnouncementTableViewController: UITableViewController {
     var course = ""
     
     let subject = ["", "Class Canceled", "Office Hours Changed", "Exam 2 Scheduled", "Assignment 5 Posted", "Assignment 3 Graded"]
-    let body = ["", "Class is canceled this Wednesday, I will be away at a conference. Please stop by my office is you have any questions or concerns.", "All office hours for Friday have been canceled. Additional office hours are being offered on Thursday from 12-2pm", "The date for Exam 2 has been set for Wednesday November 9th at 9:30 AM in Debartolo 117.", "Assignment 5 has been posted. It is due next Tuesday at 4pm. This assignment will cover everything from last homework as well.", "The grades for Assignment 3 have been posted. The average score was 50/60. Max Score: 60/60, Min Score: 30/60."]
-    let date = ["", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM", "Monday November 7th, 12:00PM"]
+    let body = ["", "Class is canceled this Friday, I will be away at a conference. Please stop by my office is you have any questions or concerns.", "All office hours for Friday have been canceled. Additional office hours are being offered on Thursday from 12-2pm", "The date for Exam 2 has been set for Wednesday November 9th at 9:30 AM in Debartolo 117.", "Assignment 5 has been posted. It is due next Tuesday at 4pm. This assignment will cover everything from last homework as well.", "The grades for Assignment 3 have been posted. The average score was 50/60. Max Score: 60/60, Min Score: 30/60."]
+    let date = ["", "Wednesday November 9th, 9:00AM", "Monday November 7th, 8:30AM", "Wednesday November 2nd, 12:00PM", "Tuesday November 1st, 2:00PM", "Monday October 24th, 12:00PM"]
 
     @IBAction func donButton(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)

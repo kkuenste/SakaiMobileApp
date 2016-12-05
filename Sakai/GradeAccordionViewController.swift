@@ -16,19 +16,19 @@ class GradeAccordionViewController: AccordionTableViewController {
         
         self.tableView.separatorColor = #colorLiteral(red: 0.03206641227, green: 0.1726923287, blue: 0.3107052743, alpha: 1)
         
+        let item0 = Parent(state: .collapsed, childs: [], score: ["5/5", "4/5", "3/5"], title: "Accountacy I")
+        
         let item1 = Parent(state: .collapsed, childs: ["Assignment 1", "Assignment 2", "Assignment 3"], score: ["5/5", "4/5", "3/5"], title: "Accountacy I")
         let item2 = Parent(state: .collapsed, childs: ["Assignment 1", "Assignment 2", "Assignment 3"], score: ["5/5", "4/5", "3/5"],title: "Calculus II")
         let item3 = Parent(state: .collapsed, childs: ["Assignment 1", "Assignment 2", "Assignment 3"], score: ["5/5", "4/5", "3/5"],title: "Fundamentals of Computing I")
         let item4 = Parent(state: .collapsed, childs: ["Assignment 1", "Assignment 2", "Assignment 3"], score: ["5/5", "4/5", "3/5"],title: "General Chemisty Principles")
         let item5 = Parent(state: .collapsed, childs: ["Assignment 1", "Assignment 2", "Assignment 3"], score: ["5/5", "4/5", "3/5"], title: "Human Computer Interaction")
-        self.dataSource = [item1, item2, item3, item4, item5]
+        self.dataSource = [item0, item1, item2, item3, item4, item5]
         self.numberOfCellsExpanded = .one
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

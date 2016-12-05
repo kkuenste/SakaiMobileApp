@@ -18,7 +18,7 @@ class AssignmentsTableViewController: UITableViewController {
     
     let assignments = ["", "Assignment", "Assignment 1", "Assignment 2", "Assignment 3", "Assignment 4", "Assignment 5"]
     let dates = ["", "Due", "10/15 11:55PM", "10/20 5:00PM", "10/23 11:55PM", "10/25 11:55PM", "11/1 9:00AM"]
-    let status = ["", "Status", "Graded", "Graded", "Submitted", "In Progress", ""]
+    let status = ["", " Status", " Graded", " Graded", " Submitted", " In Progress", ""]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +71,7 @@ class AssignmentsTableViewController: UITableViewController {
                         aCell.dateLabel.text = "Due"
                         aCell.pdfLabel.textAlignment = .center
                     } else {
-                        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Assignment \(indexPath.row + 1)")
+                        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Assignment \(indexPath.row - 1)")
                         attributeString.addAttribute(NSUnderlineStyleAttributeName, value: 1, range: NSMakeRange(0, attributeString.length))
                         aCell.nameLabel.attributedText = attributeString
                         aCell.dateLabel.text = dates[indexPath.row]

@@ -223,6 +223,7 @@ extension AccordionTableViewController {
                 cell.preservesSuperviewLayoutMargins = false
                 cell.separatorInset = UIEdgeInsets.zero
                 cell.layoutMargins = UIEdgeInsets.zero
+                cell.isUserInteractionEnabled = false
                 return cell
             }
         }
@@ -230,6 +231,17 @@ extension AccordionTableViewController {
         let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
         
         if (String(describing: self).range(of: "GradeAccordionViewController") != nil) {
+            if (indexPath.row == 0) {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
+               /* if let titleCell = cell as? ResourceTitleCell {
+                    titleCell.courseLabel.text = "All Courses"
+                } */
+                cell.preservesSuperviewLayoutMargins = false
+                cell.separatorInset = UIEdgeInsets.zero
+                cell.layoutMargins = UIEdgeInsets.zero
+                cell.isUserInteractionEnabled = false
+                return cell
+            }
             if !isParentCell {
                 let cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath)
                 if let childCell = cell as? ChildTableViewCell {
@@ -334,10 +346,8 @@ extension AccordionTableViewController {
     }
     
     override open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if (String(describing: self).range(of: "ResourceViewController") != nil) {
-            if (indexPath.row == 0) {
-               return 65
-            }
+        if (indexPath.row == 0) {
+            return 65
         }
         return !self.findParent(indexPath.row).isParentCell ? 44.0 : 64.0
     }

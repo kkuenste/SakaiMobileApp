@@ -16,9 +16,9 @@ class ClassGradeTableViewController: UITableViewController {
     
     var course = ""
     
-    let items = ["title", "Assignments", "Assigment 1", "Assignment 2", "Assignment 3", "Exams", "Exam 1", "Exam 2"]
-    let score = ["title", "Assignments", "5/5", "4/5", "4.5/5", "Exams", "73/80", "75/80"]
-    let percent = ["", "", "100%", "80%", "90%", "", "91%", "94%"]
+    let items = ["title", "Assignments", "Assigment 1", "Assignment 2", "Assignment 3", "Assignment 4", "Exams", "Exam 1", "Exam 2", "Project", "Proposal", "Initial Demo", "Presentation", "Final Report", "Participation", "Attendance"]
+    let score = ["title", "Assignments", "5/5", "4/5", "4.5/5", "5/5", "Exams", "73/80", "75/80", "Project", "5/5", "7/10", "14/15", "15/15", "", "5/5"]
+    let percent = ["", "", "100%", "80%", "90%", "100%", "", "91%", "94%", "", "100%", "70", "93%", "100%", "", "100%"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +56,7 @@ class ClassGradeTableViewController: UITableViewController {
             cell.layoutMargins = UIEdgeInsets.zero
             return cell
         }
-        else if (indexPath.row == 1) || (indexPath.row == 5){
+        else if (indexPath.row == 1) || (indexPath.row == 6) || (indexPath.row == 9) || (indexPath.row == 14){
             let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell", for: indexPath)
             if let sectionCell = cell as? sectionTableViewCell {
                 sectionCell.titleLabel.text = items[indexPath.row]
