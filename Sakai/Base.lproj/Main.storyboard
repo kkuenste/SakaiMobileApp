@@ -97,10 +97,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aa9-pV-Rl7">
-                                <rect key="frame" x="62.5" y="448" width="250" height="35"/>
+                                <rect key="frame" x="62.5" y="448" width="250" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ISQ-QL-sXR">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
                                         <state key="normal" title="Login">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Login">
@@ -120,7 +120,7 @@
                                 <constraints>
                                     <constraint firstItem="ISQ-QL-sXR" firstAttribute="width" secondItem="aa9-pV-Rl7" secondAttribute="width" id="Fr5-v6-GJ9"/>
                                     <constraint firstAttribute="width" constant="250" id="LvL-Pt-gdX"/>
-                                    <constraint firstAttribute="height" constant="35" id="hyK-8g-yal"/>
+                                    <constraint firstAttribute="height" constant="30" id="hyK-8g-yal"/>
                                     <constraint firstItem="ISQ-QL-sXR" firstAttribute="centerY" secondItem="aa9-pV-Rl7" secondAttribute="centerY" id="iKK-0t-Ixl"/>
                                     <constraint firstItem="ISQ-QL-sXR" firstAttribute="height" secondItem="aa9-pV-Rl7" secondAttribute="height" id="jff-eB-kVq"/>
                                     <constraint firstItem="ISQ-QL-sXR" firstAttribute="centerX" secondItem="aa9-pV-Rl7" secondAttribute="centerX" id="joE-iK-HLE"/>
@@ -263,19 +263,19 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KK0-1m-8c3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="double" translatesAutoresizingMaskIntoConstraints="NO" id="PTg-hY-HzQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="665"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="double" translatesAutoresizingMaskIntoConstraints="NO" id="PTg-hY-HzQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="375" id="2Nq-Bd-yCQ"/>
-                                            <constraint firstAttribute="height" constant="665" id="5Xf-kx-7Ze"/>
+                                            <constraint firstAttribute="height" constant="600" id="5Xf-kx-7Ze"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="PTg-hY-HzQ" firstAttribute="leading" secondItem="KK0-1m-8c3" secondAttribute="leading" id="32T-UZ-J4z"/>
                                     <constraint firstAttribute="trailing" secondItem="PTg-hY-HzQ" secondAttribute="trailing" id="dHA-l9-L7J"/>
-                                    <constraint firstAttribute="bottom" secondItem="PTg-hY-HzQ" secondAttribute="bottom" constant="-62" id="gXh-9f-XRx"/>
-                                    <constraint firstItem="PTg-hY-HzQ" firstAttribute="top" secondItem="KK0-1m-8c3" secondAttribute="top" constant="64" id="wAl-LS-dbU"/>
+                                    <constraint firstAttribute="bottom" secondItem="PTg-hY-HzQ" secondAttribute="bottom" constant="67" id="gXh-9f-XRx"/>
+                                    <constraint firstItem="PTg-hY-HzQ" firstAttribute="top" secondItem="KK0-1m-8c3" secondAttribute="top" id="wAl-LS-dbU"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="xiz-Je-onj" id="JFZ-3O-p6j"/>
@@ -362,7 +362,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.8666666666666667" green="0.8901960784313725" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rna-I3-GJs" customClass="syllabusDetailView" customModule="Sakai" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rna-I3-GJs">
                                 <rect key="frame" x="16" y="169" width="162" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -393,7 +393,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.8666666666666667" green="0.89411764705882357" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="olC-9I-2sn" customClass="syllabusDetailView" customModule="Sakai" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="olC-9I-2sn">
                                 <rect key="frame" x="197" y="169" width="162" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -417,7 +417,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="162" height="97"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="pUM-ni-z25" kind="presentation" id="idb-rU-7Vw"/>
+                                            <segue destination="pUM-ni-z25" kind="presentation" identifier="gradeSegue" id="idb-rU-7Vw"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -448,7 +448,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="162" height="97"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="Aen-0m-paD" kind="presentation" id="cly-k2-v3b"/>
+                                            <segue destination="Aen-0m-paD" kind="presentation" identifier="officeSegue" id="cly-k2-v3b"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -478,13 +478,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="162" height="97"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="53f-kp-emM" kind="presentation" id="XMQ-LJ-KhG"/>
+                                            <segue destination="53f-kp-emM" kind="presentation" identifier="assignmentSegue" id="XMQ-LJ-KhG"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.8666666666666667" green="0.89411764705882357" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4R-9M-NJj" customClass="syllabusDetailView" customModule="Sakai" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4R-9M-NJj">
                                 <rect key="frame" x="16" y="399" width="162" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -509,13 +509,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="162" height="97"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="iNv-EI-Ji9" kind="presentation" id="210-pK-g9S"/>
+                                            <segue destination="iNv-EI-Ji9" kind="presentation" identifier="resourceSegue" id="210-pK-g9S"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.8666666666666667" green="0.89411764705882357" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D9Q-3Z-aJD" customClass="syllabusDetailView" customModule="Sakai" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D9Q-3Z-aJD">
                                 <rect key="frame" x="197" y="399" width="162" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -540,7 +540,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="162" height="97"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="eI8-2L-z1n" kind="presentation" id="5SA-md-Iyc"/>
+                                            <segue destination="eI8-2L-z1n" kind="presentation" identifier="announcementSegue" id="5SA-md-Iyc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -585,7 +585,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6V-ly-4EN">
-                                <rect key="frame" x="16" y="85" width="343" height="21"/>
+                                <rect key="frame" x="16" y="152" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Professor Office Hours">
@@ -598,7 +598,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJ1-vL-h2h">
-                                <rect key="frame" x="16" y="114" width="343" height="21"/>
+                                <rect key="frame" x="16" y="181" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Fitzpatrick 320">
@@ -611,7 +611,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5W-Ow-gZL">
-                                <rect key="frame" x="16" y="143" width="343" height="21"/>
+                                <rect key="frame" x="16" y="210" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="MWF 2:00pm - 3:00pm">
@@ -624,7 +624,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUi-kh-NXq">
-                                <rect key="frame" x="16" y="190" width="343" height="21"/>
+                                <rect key="frame" x="16" y="257" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TA Office Hours">
@@ -637,7 +637,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXM-E8-92J">
-                                <rect key="frame" x="16" y="219" width="343" height="21"/>
+                                <rect key="frame" x="16" y="286" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Cushing 212">
@@ -650,13 +650,44 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDH-Jf-7rJ">
-                                <rect key="frame" x="16" y="248" width="343" height="21"/>
+                                <rect key="frame" x="16" y="315" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TR 12:00pm - 1:00pm">
                                         <attributes>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Joy-eW-7GQ">
+                                <rect key="frame" x="0.0" y="129" width="375" height="0.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.12549019610000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Me6-U9-EQc">
+                                <rect key="frame" x="116" y="72" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Office Hours">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwv-5K-4eR">
+                                <rect key="frame" x="16" y="100" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -673,6 +704,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="courseLabel" destination="cwv-5K-4eR" id="p0D-zf-lmv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wns-np-il2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -688,20 +722,33 @@
                         <color key="backgroundColor" red="0.86666666670000003" green="0.89019607840000003" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" id="zPM-OW-GOw">
-                                <rect key="frame" x="0.0" y="28" width="375" height="55"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" rowHeight="65" id="zPM-OW-GOw" customClass="GradeTitleCell" customModule="Sakai" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zPM-OW-GOw" id="h90-E5-7Ai">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkp-R6-HHO">
+                                            <rect key="frame" x="8" y="35" width="359" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Label">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pS2-Vw-lqQ">
-                                            <rect key="frame" x="8" y="17" width="359" height="21"/>
+                                            <rect key="frame" x="8" y="8" width="359" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Assignments">
                                                     <attributes>
-                                                        <font key="NSFont" size="19" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -710,9 +757,12 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="courseLabel" destination="Jkp-R6-HHO" id="EOW-TR-bJ1"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="assignCell" rowHeight="44" id="whQ-n7-ShN" customClass="AssignmentTableViewCell" customModule="Sakai" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="83" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="93" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="whQ-n7-ShN" id="aFH-yK-FfH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -826,18 +876,18 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gg6-a2-vEA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twopages" translatesAutoresizingMaskIntoConstraints="NO" id="owD-Ph-d1D">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="976"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AssignmentPDF" translatesAutoresizingMaskIntoConstraints="NO" id="owD-Ph-d1D">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="665"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="375" id="qG4-gb-zmJ"/>
-                                            <constraint firstAttribute="height" constant="976" id="yHM-Nv-33g"/>
+                                            <constraint firstAttribute="height" constant="665" id="yHM-Nv-33g"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="owD-Ph-d1D" secondAttribute="trailing" id="M1B-up-X6i"/>
-                                    <constraint firstItem="owD-Ph-d1D" firstAttribute="top" secondItem="gg6-a2-vEA" secondAttribute="top" constant="64" id="f20-55-neF"/>
-                                    <constraint firstAttribute="bottom" secondItem="owD-Ph-d1D" secondAttribute="bottom" constant="-373" id="jqb-xV-Axn"/>
+                                    <constraint firstItem="owD-Ph-d1D" firstAttribute="top" secondItem="gg6-a2-vEA" secondAttribute="top" id="f20-55-neF"/>
+                                    <constraint firstAttribute="bottom" secondItem="owD-Ph-d1D" secondAttribute="bottom" constant="2" id="jqb-xV-Axn"/>
                                     <constraint firstItem="owD-Ph-d1D" firstAttribute="leading" secondItem="gg6-a2-vEA" secondAttribute="leading" id="uou-Kv-vBW"/>
                                 </constraints>
                                 <connections>
@@ -898,20 +948,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" rowHeight="30" id="aLU-uI-xcG">
-                                <rect key="frame" x="0.0" y="28" width="375" height="30"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" rowHeight="65" id="aLU-uI-xcG" customClass="GradeTitleCell" customModule="Sakai" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aLU-uI-xcG" id="cXo-nW-jT3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtf-Ou-PZm">
+                                            <rect key="frame" x="8" y="35" width="359" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfW-HD-Lnc">
-                                            <rect key="frame" x="8" y="9" width="359" height="21"/>
+                                            <rect key="frame" x="8" y="8" width="359" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Announcements">
                                                     <attributes>
-                                                        <font key="NSFont" size="19" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -920,9 +977,12 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="courseLabel" destination="wtf-Ou-PZm" id="qcO-4R-naI"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ACell" rowHeight="153" id="HZV-Cw-EtM" customClass="AnnouncementTableViewCell" customModule="Sakai" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="58" width="375" height="153"/>
+                                <rect key="frame" x="0.0" y="93" width="375" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HZV-Cw-EtM" id="jop-go-rFi">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="153"/>
@@ -1027,16 +1087,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0jD-Np-N3e">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" rowHeight="65" id="0jD-Np-N3e" customClass="ResourceTitleCell" customModule="AccordionMenuSwift">
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0jD-Np-N3e" id="mfy-uu-men">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxR-7d-PM9">
+                                            <rect key="frame" x="0.0" y="35" width="375" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Label">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dh-ws-EXe">
+                                            <rect key="frame" x="127" y="8" width="121" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Resources">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="courseLabel" destination="dxR-7d-PM9" id="BXk-JL-GLS"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParentCell" id="QW8-o6-x6T" customClass="ResourceParentCell" customModule="AccordionMenuSwift">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="93" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QW8-o6-x6T" id="GRk-O5-D1g">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1076,7 +1166,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChildCell" id="e9e-cW-u2i" customClass="ResourceChildCell" customModule="AccordionMenuSwift">
-                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="137" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e9e-cW-u2i" id="Fxy-sO-lro">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1148,16 +1238,16 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVP-DA-6DS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twopages" translatesAutoresizingMaskIntoConstraints="NO" id="IU4-gD-88o">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="970"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AssignmentPDF" translatesAutoresizingMaskIntoConstraints="NO" id="IU4-gD-88o">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="601"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="IU4-gD-88o" firstAttribute="centerX" secondItem="uVP-DA-6DS" secondAttribute="centerX" id="EHv-fn-AFX"/>
-                                    <constraint firstItem="IU4-gD-88o" firstAttribute="top" secondItem="uVP-DA-6DS" secondAttribute="top" constant="64" id="JLc-1P-9Pq"/>
-                                    <constraint firstItem="IU4-gD-88o" firstAttribute="centerY" secondItem="uVP-DA-6DS" secondAttribute="centerY" constant="215.5" id="NKo-bA-1kC"/>
+                                    <constraint firstItem="IU4-gD-88o" firstAttribute="top" secondItem="uVP-DA-6DS" secondAttribute="top" id="JLc-1P-9Pq"/>
+                                    <constraint firstItem="IU4-gD-88o" firstAttribute="centerY" secondItem="uVP-DA-6DS" secondAttribute="centerY" constant="-33" id="NKo-bA-1kC"/>
                                     <constraint firstAttribute="trailing" secondItem="IU4-gD-88o" secondAttribute="trailing" id="OLE-yq-u0I"/>
-                                    <constraint firstAttribute="bottom" secondItem="IU4-gD-88o" secondAttribute="bottom" constant="-367" id="f52-WG-PZH"/>
+                                    <constraint firstAttribute="bottom" secondItem="IU4-gD-88o" secondAttribute="bottom" constant="66" id="f52-WG-PZH"/>
                                     <constraint firstItem="IU4-gD-88o" firstAttribute="leading" secondItem="uVP-DA-6DS" secondAttribute="leading" id="tAF-RH-mq7"/>
                                 </constraints>
                                 <connections>
@@ -1339,20 +1429,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" id="WJk-yv-kSM" customClass="GradeTitleCell" customModule="Sakai" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" rowHeight="65" id="WJk-yv-kSM" customClass="GradeTitleCell" customModule="Sakai" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WJk-yv-kSM" id="Q4h-NJ-eIO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puH-gD-Hiu">
+                                            <rect key="frame" x="10" y="35" width="354" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsK-A7-kaF">
-                                            <rect key="frame" x="126" y="11" width="123" height="21"/>
+                                            <rect key="frame" x="100" y="8" width="175" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Gradebook">
                                                     <attributes>
-                                                        <font key="NSFont" size="19" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                                        <font key="NSOriginalFont" size="19" name="HelveticaNeue"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -1361,9 +1459,12 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="courseLabel" destination="puH-gD-Hiu" id="v17-7U-Ib0"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sectionCell" id="Hsd-DU-R8R" customClass="sectionTableViewCell" customModule="Sakai" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="93" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hsd-DU-R8R" id="eTc-bo-bQ5">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1389,7 +1490,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="gradeCell" id="eyq-ae-mbU" customClass="ClassGradeTableViewCell" customModule="Sakai" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="137" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eyq-ae-mbU" id="p6g-Oa-EnT">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1425,29 +1526,47 @@
                                             <color key="backgroundColor" red="0.039215686270000001" green="0.12549019610000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TGG-Lu-49i">
-                                            <rect key="frame" x="255" y="-2" width="0.5" height="46"/>
+                                            <rect key="frame" x="300" y="-2" width="0.5" height="46"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.039215686270000001" green="0.12549019610000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comment" translatesAutoresizingMaskIntoConstraints="NO" id="KEl-qF-tMM">
-                                            <rect key="frame" x="300" y="10" width="25" height="25"/>
+                                            <rect key="frame" x="324" y="9" width="25" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="commentOutline" translatesAutoresizingMaskIntoConstraints="NO" id="aY0-MU-1Sd">
-                                            <rect key="frame" x="300" y="10" width="25" height="25"/>
+                                            <rect key="frame" x="324" y="9" width="25" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bL4-3I-xEx">
-                                            <rect key="frame" x="296" y="6" width="33" height="33"/>
+                                            <rect key="frame" x="320" y="5" width="33" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <connections>
                                                 <action selector="commentButton:" destination="eyq-ae-mbU" eventType="touchUpInside" id="CIu-0K-lR5"/>
                                             </connections>
                                         </button>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qI5-3z-AXE">
+                                            <rect key="frame" x="228" y="0.0" width="0.5" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.039215686270000001" green="0.12549019610000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4r-ug-kE1">
+                                            <rect key="frame" x="240" y="12" width="65" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Label">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="itemLabel" destination="k8a-Ux-1Gq" id="wdX-Xd-AtD"/>
+                                    <outlet property="percentLabel" destination="S4r-ug-kE1" id="NQa-5T-VXA"/>
                                     <outlet property="scoreLabel" destination="fMJ-Cj-uNc" id="EZO-3x-mRV"/>
                                 </connections>
                             </tableViewCell>
@@ -1598,6 +1717,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AssignmentPDF" width="1275" height="2044"/>
         <image name="annoucements" width="100" height="100"/>
         <image name="assignments" width="100" height="100"/>
         <image name="banner" width="1117" height="94"/>
@@ -1611,6 +1731,5 @@
         <image name="grades" width="100" height="100"/>
         <image name="pdf" width="100" height="100"/>
         <image name="syllabus" width="100" height="100"/>
-        <image name="twopages" width="1275" height="3300"/>
     </resources>
 </document>

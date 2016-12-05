@@ -214,6 +214,19 @@ extension AccordionTableViewController {
     
     override  open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        if (String(describing: self).range(of: "ResourceViewController") != nil) {
+            if (indexPath.row == 0) {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
+                if let titleCell = cell as? ResourceTitleCell {
+                    titleCell.courseLabel.text = self.dataSource[0].score[self.dataSource[0].score.count - 1]
+                }
+                cell.preservesSuperviewLayoutMargins = false
+                cell.separatorInset = UIEdgeInsets.zero
+                cell.layoutMargins = UIEdgeInsets.zero
+                return cell
+            }
+        }
+        
         let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
         
         if (String(describing: self).range(of: "GradeAccordionViewController") != nil) {
@@ -321,6 +334,11 @@ extension AccordionTableViewController {
     }
     
     override open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if (String(describing: self).range(of: "ResourceViewController") != nil) {
+            if (indexPath.row == 0) {
+               return 65
+            }
+        }
         return !self.findParent(indexPath.row).isParentCell ? 44.0 : 64.0
     }
 }

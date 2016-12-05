@@ -13,10 +13,12 @@ class ClassGradeTableViewController: UITableViewController {
     @IBAction func doneButton(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }
-
+    
+    var course = ""
     
     let items = ["title", "Assignments", "Assigment 1", "Assignment 2", "Assignment 3", "Exams", "Exam 1", "Exam 2"]
     let score = ["title", "Assignments", "5/5", "4/5", "4.5/5", "Exams", "73/80", "75/80"]
+    let percent = ["", "", "100%", "80%", "90%", "", "91%", "94%"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,9 +48,9 @@ class ClassGradeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (indexPath.row == 0) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
-            //if let titleCell = cell as? GradeTitleCell {
-            //    //titleCell.nameLabel.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
-            //}
+            if let titleCell = cell as? GradeTitleCell {
+                titleCell.courseLabel.text = course
+            }
             cell.preservesSuperviewLayoutMargins = false
             cell.separatorInset = UIEdgeInsets.zero
             cell.layoutMargins = UIEdgeInsets.zero
@@ -68,6 +70,7 @@ class ClassGradeTableViewController: UITableViewController {
             if let gradeCell = cell as? ClassGradeTableViewCell {
                 gradeCell.itemLabel!.text = items[indexPath.row]
                 gradeCell.scoreLabel.text = score[indexPath.row]
+                gradeCell.percentLabel.text = percent[indexPath.row]
             }
             cell.preservesSuperviewLayoutMargins = false
             cell.separatorInset = UIEdgeInsets.zero
@@ -75,6 +78,15 @@ class ClassGradeTableViewController: UITableViewController {
             return cell
         }
         
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if (indexPath.row == 0) {
+            return 65
+        }
+        else {
+            return 44
+        }
     }
     
 

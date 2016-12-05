@@ -12,6 +12,7 @@ class ClassGradeTableViewCell: UITableViewCell {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var itemLabel: UILabel!
 
+    @IBOutlet weak var percentLabel: UILabel!
     @IBAction func commentButton(_ sender: Any) {
         let alert = UIAlertController(title: "\(itemLabel.text!) Comments", message: "Good work.", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))

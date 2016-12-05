@@ -14,6 +14,8 @@ class AssignmentsTableViewController: UITableViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    var course = ""
+    
     let assignments = ["", "Assignment", "Assignment 1", "Assignment 2", "Assignment 3", "Assignment 4", "Assignment 5"]
     let dates = ["", "Due", "10/15 11:55PM", "10/20 5:00PM", "10/23 11:55PM", "10/25 11:55PM", "11/1 9:00AM"]
     let status = ["", "Status", "Graded", "Graded", "Submitted", "In Progress", ""]
@@ -50,11 +52,15 @@ class AssignmentsTableViewController: UITableViewController {
             cell.preservesSuperviewLayoutMargins = false
             cell.separatorInset = UIEdgeInsets.zero
             cell.layoutMargins = UIEdgeInsets.zero
+            if let titleCell = cell as? GradeTitleCell {
+                titleCell.courseLabel.text = course
+            }
             return cell
+            
         }
         else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "assignCell", for: indexPath)
-        
+            
+                let cell = tableView.dequeueReusableCell(withIdentifier: "assignCell", for: indexPath)
                 if let aCell = cell as? AssignmentTableViewCell  {
                     if (indexPath.row == 1) {
                         aCell.nameLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
@@ -68,15 +74,15 @@ class AssignmentsTableViewController: UITableViewController {
                         let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Assignment \(indexPath.row + 1)")
                         attributeString.addAttribute(NSUnderlineStyleAttributeName, value: 1, range: NSMakeRange(0, attributeString.length))
                         aCell.nameLabel.attributedText = attributeString
-                        //aCell.nameLabel.text = assignments[indexPath.row]
                         aCell.dateLabel.text = dates[indexPath.row]
                         aCell.pdfLabel.text = status[indexPath.row]
                     
                 }
+                cell.preservesSuperviewLayoutMargins = false
+                cell.separatorInset = UIEdgeInsets.zero
+                cell.layoutMargins = UIEdgeInsets.zero
             }
-            cell.preservesSuperviewLayoutMargins = false
-            cell.separatorInset = UIEdgeInsets.zero
-            cell.layoutMargins = UIEdgeInsets.zero
+            
             return cell
         }
     }
@@ -86,7 +92,7 @@ class AssignmentsTableViewController: UITableViewController {
             return 44.0
         }
         else {
-            return 55
+            return 65
         }
     }
 

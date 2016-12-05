@@ -12,8 +12,13 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBar.backgroundImage = UIImage(named: "tab")
+        self.tabBar.backgroundImage = UIImage(named: "yellowtab")
         self.tabBar.tintColor = UIColor.white
+        
+        let appearance = UITabBarItem.appearance()
+        let attributes = [NSFontAttributeName:UIFont(name: "Helvetica Neue", size: 14)]
+        appearance.setTitleTextAttributes(attributes, for: .normal)
+        
     }
 
     override func didReceiveMemoryWarning() {

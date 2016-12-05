@@ -9,13 +9,16 @@
 import UIKit
 
 class OfficeHourViewController: UIViewController {
-
+    var course = ""
+    
+    @IBOutlet weak var courseLabel: UILabel!
     @IBAction func doneButton(_ sender: Any) {
        dismiss(animated: true, completion: nil) 
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        courseLabel.text = course
 
         // Do any additional setup after loading the view.
     }

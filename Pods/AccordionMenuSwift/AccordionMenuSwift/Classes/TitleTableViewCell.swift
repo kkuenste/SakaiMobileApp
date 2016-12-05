@@ -1,15 +1,14 @@
 //
-//  GradeTitleCell.swift
-//  Sakai
+//  TitleTableViewCell.swift
+//  Pods
 //
-//  Created by Katie Kuenster on 11/30/16.
-//  Copyright © 2016 HCI2016. All rights reserved.
+//  Created by Katie Kuenster on 12/4/16.
+//
 //
 
 import UIKit
 
-class GradeTitleCell: UITableViewCell {
-    @IBOutlet weak var courseLabel: UILabel!
+class TitleTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

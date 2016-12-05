@@ -1,16 +1,16 @@
 //
-//  GradeTitleCell.swift
+//  ResourceTitleCell.swift
 //  Sakai
 //
-//  Created by Katie Kuenster on 11/30/16.
+//  Created by Katie Kuenster on 12/4/16.
 //  Copyright © 2016 HCI2016. All rights reserved.
 //
 
 import UIKit
 
-class GradeTitleCell: UITableViewCell {
-    @IBOutlet weak var courseLabel: UILabel!
+class ResourceTitleCell: UITableViewCell {
 
+    @IBOutlet weak var courseLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

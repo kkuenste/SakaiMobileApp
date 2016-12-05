@@ -21,7 +21,6 @@ class GradeAccordionViewController: AccordionTableViewController {
         let item3 = Parent(state: .collapsed, childs: ["Assignment 1", "Assignment 2", "Assignment 3"], score: ["5/5", "4/5", "3/5"],title: "Fundamentals of Computing I")
         let item4 = Parent(state: .collapsed, childs: ["Assignment 1", "Assignment 2", "Assignment 3"], score: ["5/5", "4/5", "3/5"],title: "General Chemisty Principles")
         let item5 = Parent(state: .collapsed, childs: ["Assignment 1", "Assignment 2", "Assignment 3"], score: ["5/5", "4/5", "3/5"], title: "Human Computer Interaction")
-        
         self.dataSource = [item1, item2, item3, item4, item5]
         self.numberOfCellsExpanded = .one
         // Do any additional setup after loading the view.
